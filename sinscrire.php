@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +25,7 @@
 
     <!--SignUp-->
     <section class="signup">
-        <form method="post" action="inscription.php">
+        <form method="post" action="sinscrire_controller.php">
             <div class="container">
                 <h1>Register</h1>
                 <p>Please fill in this form to create an account.</p>
