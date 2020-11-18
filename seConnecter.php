@@ -1,0 +1,64 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/58cdc139df.js" crossorigin="anonymous"></script>
+    <!--LogoPage-->
+    <link rel="icon" type="image/png" href="../img/logo.jpg" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Les Viets - Se Connecter</title>
+</head>
+
+<body id="mainpage">
+    <!------------------------------- HEADER - START ------------------------------------------>
+    <?php
+    require_once('/xampp/htdocs/awei-demo/utils/header.php');
+    ?>
+    <!--------------------------------- HEADER - END ------------------------------------>
+
+    <!--SignIn-->
+    <section id="wrapper-signin">
+        <form name="login-form" class="login-form" action="seConnecter_controller.php" method="post">
+            <h1>Login</h1>
+
+            <div class="content-login">
+                <div class="inputBox">
+                    <input type="text" name="email" required="required" />
+                    <span>Email</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" name="mot_de_passe" required="required" />
+                    <span>Mot de Passe</span>
+                </div>
+            </div>
+            <div class="button-login">
+                <button class="submit-btn" type="submit">Se Connecter</button>
+                <a href="sinscrire.php">Register</a>
+            </div>
+            <!-- Si la connexion n'a pas fonctionné -->
+            <?php
+            if (isset($_GET['error']) && $_GET['error'] == TRUE) {
+            ?>
+            <p>Mauvais identifiant ou mot de passe !</p>
+            <?php
+            }
+            ?>
+        </form>
+    </section>
+
+    <!--footer-->
+    <?php
+    require_once('/xampp/htdocs/awei-demo/utils/footer.php');
+    ?>
+
+</body>
+
+</html>
