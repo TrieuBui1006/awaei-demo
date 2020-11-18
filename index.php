@@ -12,7 +12,7 @@ session_start();
     <!--LogoPage-->
     <link rel="icon" type="image/png" href="img/logo/logo2.png" />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
     <title>VIETSAF - Accueil</title>
 </head>
 

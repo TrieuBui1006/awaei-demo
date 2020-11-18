@@ -1,7 +1,7 @@
 <header class="header-nav">
     <div class="navbar-logo">
         <a href="#mainpage" class="logo">
-            <img src="img/logo/logo2.png" alt="logo" />
+            <img src="img/logo/logo2.png" alt="logo"/>
         </a>
     </div>
 

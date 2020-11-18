@@ -78,26 +78,21 @@ header.header-nav{
      z-index: 9999;
 }
 
-header.header-nav .navbar-logo a.logo{
-     position: relative;
-}
 
-header.header-nav .navbar-logo a.logo span{
+
+header.header-nav .navbar-logo a.logo img{
      position: relative;
 
-     color: var(--NavbarTextColor);
+     height: 50px;
+     width: 100px;
 
-     font-weight: 500;
-     font-size: 2.4rem;
-     letter-spacing: 2px;
-     font-family: 'Dancing Script', cursive;
-     text-transform: uppercase;
+     margin-top: 10px;
 
      transition: all 0.3s ease-in-out;
 }
 
-header.header-nav .navbar-logo a.logo:hover span{
-     font-size: 2.5rem;
+header.header-nav .navbar-logo a.logo:hover img{
+     transform: scale(1.05);
 }
 
 /*navigation*/

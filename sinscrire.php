@@ -32,28 +32,28 @@ session_start();
 
                 <div class="input-box">
                     <div>
-                        <label for="prenom"><b>Prenom</b></label>
+                        <label for="prenom"><b>Prenom <span style="color: red;">*</span></b></label>
                         <input type="text" placeholder="Prenom" name="prenom" required />
                     </div>
                     <div>
-                        <label for="nom"><b>Nom</b></label>
+                        <label for="nom"><b>Nom <span style="color: red;">*</span></b></label>
                         <input type="text" placeholder="Nom" name="nom" required />
                     </div>
                 </div>
 
-                <label for="telephone"><b>Telephone</b></label>
+                <label for="telephone"><b>Telephone <span style="color: red;">*</span></b></label>
                 <input type="tel" placeholder="Entrez Numero Telephone" name="telephone" required />
 
-                <label for="email"><b>Email</b></label>
+                <label for="email"><b>Email <span style="color: red;">*</span></b></label>
                 <input type="email" placeholder="Entrez Email" name="email" required />
 
                 <!-- <label for="rp-email"><b>Repeat Email</b></label>
                 <input type="email" placeholder="Repeat Email" name="rp-email" required /> -->
 
-                <label for="motDePasse"><b>Mot De Passe</b></label>
+                <label for="motDePasse"><b>Mot De Passe <span style="color: red;">*</span></b></label>
                 <input type="password" placeholder="Entrez Mot De Passe" name="motDePasse" required />
 
-                <label for="motDePasse_check"><b>Rentrez Mot De Passe</b></label>
+                <label for="motDePasse_check"><b>Rentrez Mot De Passe <span style="color: red;">*</span></b></label>
                 <input type="password" placeholder="Enter Mot De Passe" name="motDePasse_check" required />
 
                 <label>
