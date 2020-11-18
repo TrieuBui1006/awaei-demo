@@ -21,24 +21,32 @@
 
     <!--SignIn-->
     <section id="wrapper-signin">
-        <form name="login-form" class="login-form" action="" method="post">
+        <form name="login-form" class="login-form" action="seConnecter_controller.php" method="post">
             <h1>Login</h1>
 
             <div class="content-login">
                 <div class="inputBox">
-                    <input type="text" name="ID" required="required" />
-                    <span>ID</span>
+                    <input type="text" name="email" required="required" />
+                    <span>Email</span>
                 </div>
 
                 <div class="inputBox">
-                    <input type="password" name="password" required="required" />
-                    <span>Password</span>
+                    <input type="password" name="mot_de_passe" required="required" />
+                    <span>Mot de Passe</span>
                 </div>
             </div>
             <div class="button-login">
-                <button class="submit-btn" type="submit">Login</button>
+                <button class="submit-btn" type="submit">Se Connecter</button>
                 <a href="sinscrire.php">Register</a>
             </div>
+            <!-- Si la connexion n'a pas fonctionné -->
+            <?php
+            if (isset($_GET['error']) && $_GET['error'] == TRUE) {
+            ?>
+            <p>Mauvais identifiant ou mot de passe !</p>
+            <?php
+            }
+            ?>
         </form>
     </section>
 
