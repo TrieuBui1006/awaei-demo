@@ -140,6 +140,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
 =======
     <!--footer-->
     <!-- test -->
+    <!-- test2 -->
     <?php
     require_once('utils/footer.php');
     ?>
