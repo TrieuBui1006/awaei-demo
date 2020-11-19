@@ -1,7 +1,8 @@
+
 <header class="header-nav">
     <div class="navbar-logo">
         <a href="#mainpage" class="logo">
-            <img src="img/logo/logo2.png" alt="logo" />
+            <img src="img/logo/logo2.png" alt="logo"/>
         </a>
     </div>
 
@@ -9,6 +10,7 @@
         <input type="checkbox" id="check" />
         <label for="check">
             <span id="toggle"></span>
+            <div class="modal"></div>
         </label>
 
         <div class="sidebar">
@@ -43,6 +45,8 @@
                 <?php endif; ?>
             </ul>
         </div>
+
+        <div class="modal_toggle"></div>
     </div>
 
     <div id="navigation">
