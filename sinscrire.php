@@ -133,8 +133,17 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
         </main>
     </section>
 
+<<<<<<< HEAD
     <!------------------------------------Body - END------------------------------------------>
 
 </body>
+=======
+    <!--footer-->
+    <!-- test -->
+    <?php
+    require_once('utils/footer.php');
+    ?>
+</body>  
+>>>>>>> 0509df4... test
 
 </html>
