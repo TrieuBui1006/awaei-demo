@@ -23,7 +23,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
 
     <!------------------------------- HEADER - START ------------------------------------------>
     <?php
-    require_once('/xampp/htdocs/awei-demo/utils/header.php');
+    require_once('utils/header.php');
     ?>
     <!--------------------------------- HEADER - END ------------------------------------>
 
@@ -134,7 +134,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
 
     <!--------------------------------- footer ------------------------------------------>
     <?php
-    require_once('/xampp/htdocs/awei-demo/utils/footer.php');
+    require_once('utils/footer.php');
     ?>
     <!--------------------------------- footer ------------------------------------------>
 
