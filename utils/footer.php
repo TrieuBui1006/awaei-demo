@@ -1,4 +1,3 @@
-<!--footer-->
 <footer>
       <div class="footer-content">
         <div class="f-content-box box-image">
@@ -6,10 +5,10 @@
             <img src="img/logo.jpg" alt="logos">
           </div>
           <div class="icons-box">
-            <a href="#" class="fb"><i class="fab fa-facebook fa-3x"></i></a>
-            <a href="#" class="twitter"><i class="fab fa-twitter fa-3x"></i></a>
-            <a href="#" class="ytb"><i class="fab fa-youtube fa-3x"></i></a>
-            <a href="#" class="inst"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="ytb"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="inst"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
         <div class="f-content-box box-support">
