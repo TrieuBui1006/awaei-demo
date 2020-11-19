@@ -911,7 +911,7 @@ section.organi{
      
      background: rgba(238, 237, 237, 0.2);
      margin: 0 auto;
-     padding: 20px;
+     padding: 40px 20px;
      border: 1px solid rgb(0, 0, 0, 0.2);
      border-radius: 5px;
      box-shadow: 2px 2px 2px #000 ;
@@ -1478,6 +1478,155 @@ section.signup form .container .input-box{
 }
 
 
+
+/*--------------------------------*/
+/*Mon Compte*/
+/*--------------------------------*/
+
+
+section .mon-compte{
+     position: relative;
+}
+
+main {
+     position: absolute;
+     top: 70px;
+     right: 0;
+
+     width: 70%;
+     padding: 1rem;
+}
+
+.navbar-compte {
+     position: fixed;
+     top: 60px;
+     left: 0;
+     width: 25vw;
+     min-width: 280px;
+     height: calc(100vh - 60px);
+
+     display: block;
+     background-color: #3282B8;
+     transition: width 0.1s ease;
+}
+
+.navbar-compte .navbar-nav-compte {
+     height: 100%;
+
+     padding: 0;
+     margin: 0;
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     list-style: none;
+}
+
+.navbar-nav-compte .nav-item-compte {
+     width: 100%;
+     box-sizing: border-box;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.navbar-nav-compte .nav-item-compte:last-child {
+     margin-top: auto;
+}
+
+.nav-link-compte {
+     display: flex;
+     height: 4.5rem;
+
+     color: #fff;
+
+     align-items: center;
+     text-decoration: none;
+
+     transition: 0.1s;
+}
+
+.nav-link-compte:hover{
+     background: rgb(57, 62, 70, 0.3);
+}
+
+.nav-link-compte i.arrow{
+     position: absolute;
+     top: 149px;
+     left: 215px;
+
+     font-size: 1.5rem;
+
+     transform: rotate(0deg);
+     transition: 0.1s;
+}
+
+.nav-item-compte:hover i.arrow{
+     transform: rotate(90deg);
+}
+
+.link-text-compte {
+     display: inline;
+     margin-left: 1rem;
+}
+
+.item-text-compte{
+     position: absolute;
+     left: 80px;
+
+     font-size: 1.4rem;
+
+     transition: 0.1s;
+}
+
+
+.nav-link-compte i{
+     font-size: 1.7rem;
+     margin-left: 2rem;
+
+     transition: 0.1s;
+}
+
+
+.submenu{
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+
+.submenu > li{
+     display: none;
+     justify-content: flex-start;
+     align-items: center;
+     width: 100%;
+     height: 4rem;
+
+     box-sizing: border-box;
+     border-top: 1px solid rgba(0, 0, 0, 0.7);
+
+     transition: all 0.1s;
+}
+
+.submenu > li:hover{
+     background: rgb(57, 62, 70, 0.3);
+}
+
+.submenu > li > a{
+     font-size: 1.3rem;
+     text-decoration: none;
+     color: #fff;
+     margin-left: 5rem;
+
+     transition: all 0.1s;
+}
+
+.submenu > li > a > i{
+     margin-right: 2rem;
+     font-size: 1.3rem;
+}
+
+.navbar-nav-compte li:hover .submenu > li{
+     display: flex;
+}
 
 
 /*--------------------------------*/

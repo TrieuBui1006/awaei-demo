@@ -30,7 +30,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <div class="background">
         <section class="container-contact">
             <form action="">
-                <h2>Contact Us</h2>
+                <h2>Nous contacter</h2>
                 <div class="row100">
                     <div class="col">
                         <div class="inputBox">
