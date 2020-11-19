@@ -35,14 +35,14 @@ if (!isset($_SESSION['id_utilisateur'])) {
                     <div class="col">
                         <div class="inputBox">
                             <input type="text" name="firstname" required="required" />
-                            <span class="text">First Name</span>
+                            <span class="text">Nom <span style="color: red;">*</span></span>
                             <span class="line"></span>
                         </div>
                     </div>
                     <div class="col">
                         <div class="inputBox">
                             <input type="text" name="lastname" required="required" />
-                            <span class="text">Last Name</span>
+                            <span class="text">Prénom <span style="color: red;">*</span></span>
                             <span class="line"></span>
                         </div>
                     </div>
@@ -51,14 +51,14 @@ if (!isset($_SESSION['id_utilisateur'])) {
                     <div class="col">
                         <div class="inputBox">
                             <input type="text" name="email" required="required" />
-                            <span class="text">Email</span>
+                            <span class="text">Email <span style="color: red;">*</span></span>
                             <span class="line"></span>
                         </div>
                     </div>
                     <div class="col">
                         <div class="inputBox">
                             <input type="text" name="mobile" required="required" />
-                            <span class="text">Mobile</span>
+                            <span class="text">Téléphone <span style="color: red;">*</span></span>
                             <span class="line"></span>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
                     <div class="col">
                         <div class="inputBox textarea">
                             <textarea required="required"></textarea>
-                            <span class="text">Type your message Here...</span>
+                            <span class="text">Tapez votre message ici... <span style="color: red;">*</span></span>
                             <span class="line"></span>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
                 <div class="row100">
                     <div class="col">
                         <div class="inputBox">
-                            <input type="submit" value="Send" />
+                            <input type="submit" value="Envoyer" />
                         </div>
                     </div>
                 </div>

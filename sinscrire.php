@@ -30,43 +30,42 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <section class="signup">
         <form method="post" action="sinscrire_controller.php">
             <div class="container">
-                <h1>Register</h1>
-                <p>Please fill in this form to create an account.</p>
+                <h1>S'INSCRIRE</h1>
+                <p>Veuillez remplir ce formulaire pour créer un compte.</p>
 
                 <div class="input-box">
                     <div>
-                        <label for="prenom"><b>Prenom</b></label>
-                        <input type="text" placeholder="Prenom" name="prenom" required />
+                        <label for="prenom"><b>Prénom <span style="color: red;">*</span></b></label>
+                        <input type="text" placeholder="Prénom" name="prenom" required />
                     </div>
                     <div>
-                        <label for="nom"><b>Nom</b></label>
+                        <label for="nom"><b>Nom <span style="color: red;">*</span></b></label>
                         <input type="text" placeholder="Nom" name="nom" required />
                     </div>
                 </div>
 
-                <label for="telephone"><b>Telephone</b></label>
-                <input type="tel" placeholder="Entrez Numero Telephone" name="telephone" required />
+                <label for="telephone"><b>Téléphone <span style="color: red;">*</span></b></label>
+                <input type="tel" placeholder="Entrez Numéro de Téléphone" name="telephone" required />
 
-                <label for="email"><b>Email</b></label>
+                <label for="email"><b>Email <span style="color: red;">*</span></b></label>
                 <input type="email" placeholder="Entrez Email" name="email" required />
 
                 <!-- <label for="rp-email"><b>Repeat Email</b></label>
                 <input type="email" placeholder="Repeat Email" name="rp-email" required /> -->
 
-                <label for="motDePasse"><b>Mot De Passe</b></label>
+                <label for="motDePasse"><b>Mot De Passe <span style="color: red;">*</span></b></label>
                 <input type="password" placeholder="Entrez Mot De Passe" name="motDePasse" required />
 
-                <label for="motDePasse_check"><b>Rentrez Mot De Passe</b></label>
-                <input type="password" placeholder="Enter Mot De Passe" name="motDePasse_check" required />
+                <label for="motDePasse_check"><b>Répéter Mot De Passe <span style="color: red;">*</span></b></label>
+                <input type="password" placeholder="Entrer Mot De Passe" name="motDePasse_check" required />
 
                 <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px" />By creating
-                    an account you agree to our
-                    <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px" >En créant un compte, vous acceptez </input>
+                    <a href="#" style="color: dodgerblue">nos conditions et notre confidentialité</a>.
                 </label>
 
                 <div class="clearfix">
-                    <button type="submit">Register</button>
+                    <button type="submit">S'inscrire</button>
                 </div>
             </div>
         </form>
