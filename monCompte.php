@@ -29,26 +29,30 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <!------------------------------------Body - START------------------------------------------>
 
     <section class="mon-compte">
+      <input type="checkbox" id="check-compte">
+      <label for="check-compte">
+        <i class="fas fa-bars toogle"></i>
+      </label>
       <nav class="navbar-compte">
         <ul class="navbar-nav-compte">
           <li class="nav-item-compte">
             <a href="#" class="nav-link-compte">
               <i class="fas fa-splotch"></i>
-              <span class="link-text-compte item-text-compte">Mon Compte</span>
+              <span class="item-text-compte">Mon Compte</span>
             </a>
           </li>
 
           <li class="nav-item-compte">
             <a href="#" class="nav-link-compte">
               <i class="fas fa-pallet"></i>
-              <span class="link-text-compte item-text-compte">Mon Salon</span>
+              <span class="item-text-compte">Mon Salon</span>
             </a>
           </li>
     
           <li class="nav-item-compte">
             <a href="#" class="nav-link-compte">
               <i class="fas fa-chess-rook"></i>
-              <span class="link-text-compte item-text-compte">Mes Chambres</span>
+              <span class="item-text-compte">Mes Chambres</span>
               <i class="fas fa-arrow-right arrow"></i>
             </a>
             <ul class="submenu">
@@ -61,35 +65,35 @@ if (!isset($_SESSION['id_utilisateur'])) {
           <li class="nav-item-compte">
             <a href="#" class="nav-link-compte">
               <i class="fas fa-pallet"></i>
-              <span class="link-text-compte item-text-compte">Ma Cuisine</span>
+              <span class="item-text-compte">Ma Cuisine</span>
             </a>
           </li>
     
           <li class="nav-item-compte">
             <a href="#" class="nav-link-compte">
               <i class="fas fa-pallet"></i>
-              <span class="link-text-compte item-text-compte">Ma SdB</span>
+              <span class="item-text-compte">Ma SdB</span>
             </a>
           </li>
 
           <li class="nav-item-compte">
             <a href="#" class="nav-link-compte">
               <i class="fas fa-pallet"></i>
-              <span class="link-text-compte item-text-compte">Mon Garage</span>
+              <span class="item-text-compte">Mon Garage</span>
             </a>
           </li>
     
           <li class="nav-item-compte">
             <a href="#" class="nav-link-compte">
               <i class="fas fa-pallet"></i>
-              <span class="link-text-compte item-text-compte">Mon Couloir</span>
+              <span class="item-text-compte">Mon Couloir</span>
             </a>
           </li>
 
           <li class="nav-item-compte" id="themeButton">
             <a href="#" class="nav-link-compte">
               <i class="fas fa-power-off"></i>
-              <span class="link-text-compte item-text-compte">Déconnection</span>
+              <span class="item-text-compte">Déconnection</span>
             </a>
           </li>
         </ul>

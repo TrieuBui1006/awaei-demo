@@ -48,13 +48,20 @@ if (!isset($_SESSION['id_utilisateur'])) {
                 </div>
             </div>
             <div class="signinup">
+            <?php if ($_SESSION['id_utilisateur'] == false) : ?>
                 <div>
-                    <a href="SignIn.html">Sign In</a>
+                    <a href="seConnecter.php">Sign In</a>
                 </div>
                 <div>
-                    <a href="SignUp.html">Sign Up</a>
+                    <a href="sinscrire.php">Sign Up</a>
                 </div>
             </div>
+            <?php endif; ?>
+            <?php if ($_SESSION['id_utilisateur'] == true) : ?>
+            <div>
+                <a href="monCompte.php">Connecter</a>
+            </div>
+            <?php endif; ?>
         </div>
     </section>
     <!-------------------------------- banner ------------------------------------------->

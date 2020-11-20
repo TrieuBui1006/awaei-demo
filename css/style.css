@@ -1483,7 +1483,6 @@ section.signup form .container .input-box{
 /*Mon Compte*/
 /*--------------------------------*/
 
-
 section .mon-compte{
      position: relative;
 }
@@ -1493,7 +1492,7 @@ main {
      top: 70px;
      right: 0;
 
-     width: 70%;
+     margin-left: 300px;
      padding: 1rem;
 }
 
@@ -1501,8 +1500,7 @@ main {
      position: fixed;
      top: 60px;
      left: 0;
-     width: 25vw;
-     min-width: 280px;
+     width: 287px;
      height: calc(100vh - 60px);
 
      display: block;
@@ -1563,16 +1561,14 @@ main {
      transform: rotate(90deg);
 }
 
-.link-text-compte {
-     display: inline;
-     margin-left: 1rem;
-}
-
 .item-text-compte{
      position: absolute;
      left: 80px;
 
+     display: inline;
+
      font-size: 1.4rem;
+     margin-left: 1rem;
 
      transition: 0.1s;
 }
@@ -1628,7 +1624,60 @@ main {
      display: flex;
 }
 
+.mon-compte label i.toogle{
+     display: none;
+     position: absolute;
+     top:60px;
+     left: 0;
+     height: 4rem;
+     width: 200px;
+}
 
+.mon-compte #check-compte{
+     display: block;
+}
+
+@media only screen and (max-width: 900px){
+     .nav-link-compte i.arrow{
+          position: absolute;
+          top: 149px;
+          left: 33px;
+     }
+
+     main {
+          position: absolute;
+          top: 70px;
+          right: 0;
+     
+          margin-left: 300px;
+          padding: 1rem;
+     }
+     
+     .navbar-compte {
+          top: 100px;
+          width: 100px;
+     }
+
+     .mon-compte label i.toogle{
+          display: block;
+     }
+
+     .item-text-compte{
+          display: none;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte{
+          width: 287px;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte{
+          width: 287px;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte ul li .item-text-compte{
+          display: block;
+     }
+}
 /*--------------------------------*/
 /*Footer*/
 /*--------------------------------*/
