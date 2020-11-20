@@ -54,9 +54,7 @@ else {
 		// On crée une session pour le nouvel utilisateur
 		session_start();
 		$_SESSION['id_utilisateur'] = $resultat['id_utilisateur'];
-		$_SESSION['email'] = $_POST['email'];
-		$_SESSION['prenom'] = $_POST['prenom'];
-		$_SESSION['nom'] = $_POST['nom'];
+		$_SESSION['role'] = $resultat["role"];
 		header('Location: index.php');
 	}
 	// Les deux mot de passe sont différents
