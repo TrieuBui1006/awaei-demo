@@ -361,7 +361,7 @@ header.header-nav .navbar-logo a.logo:hover img{
      }
 }
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 400px){
 
      #navigation{
           display: none;
@@ -1485,6 +1485,7 @@ section.signup form .container .input-box{
 
 section .mon-compte{
      position: relative;
+     z-index: 999;
 }
 
 main {
@@ -1494,6 +1495,8 @@ main {
 
      margin-left: 300px;
      padding: 1rem;
+
+     transition: width 0.1s ease;
 }
 
 .navbar-compte {
@@ -1505,6 +1508,7 @@ main {
 
      display: block;
      background-color: #3282B8;
+     z-index: 9999;
      transition: width 0.1s ease;
 }
 
@@ -1532,12 +1536,15 @@ main {
 
 .nav-link-compte {
      display: flex;
-     height: 4.5rem;
+     height: 4rem;
 
      color: #fff;
 
+     justify-content: flex-start;
      align-items: center;
      text-decoration: none;
+
+     padding-left: 4rem;
 
      transition: 0.1s;
 }
@@ -1546,28 +1553,26 @@ main {
      background: rgb(57, 62, 70, 0.3);
 }
 
+.nav-item-compte #chambre{
+     display: none;
+     transition: 0.1s;
+}
+
 .nav-link-compte i.arrow{
      position: absolute;
-     top: 149px;
+     top: 133px;
      left: 215px;
 
-     font-size: 1.5rem;
+     font-size: 1.4rem;
 
      transform: rotate(0deg);
      transition: 0.1s;
 }
 
-.nav-item-compte:hover i.arrow{
-     transform: rotate(90deg);
-}
-
 .item-text-compte{
-     position: absolute;
-     left: 80px;
-
      display: inline;
 
-     font-size: 1.4rem;
+     font-size: 1.3rem;
      margin-left: 1rem;
 
      transition: 0.1s;
@@ -1575,8 +1580,17 @@ main {
 
 
 .nav-link-compte i{
-     font-size: 1.7rem;
-     margin-left: 2rem;
+     font-size: 1.5rem;
+
+     transition: 0.1s;
+}
+
+.nav-link-compte label{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
 
      transition: 0.1s;
 }
@@ -1587,6 +1601,8 @@ main {
      display: flex;
      flex-direction: column;
      width: 100%;
+
+     transition: 0.1s;
 }
 
 .submenu > li{
@@ -1607,7 +1623,7 @@ main {
 }
 
 .submenu > li > a{
-     font-size: 1.3rem;
+     font-size: 1.2rem;
      text-decoration: none;
      color: #fff;
      margin-left: 5rem;
@@ -1617,20 +1633,36 @@ main {
 
 .submenu > li > a > i{
      margin-right: 2rem;
-     font-size: 1.3rem;
+     font-size: 1.2rem;
 }
 
-.navbar-nav-compte li:hover .submenu > li{
+.nav-item-compte #chambre:checked ~ .submenu > li{
      display: flex;
 }
 
+.nav-item-compte #chambre:checked ~ .nav-link-compte i.arrow{
+     transform: rotate(90deg);
+}
+
+
 .mon-compte label i.toogle{
      display: none;
-     position: absolute;
+     position: fixed;
      top:60px;
      left: 0;
-     height: 4rem;
-     width: 200px;
+     height: 30px;
+     width: 120px;
+
+     font-size: 1.5rem;
+
+     justify-content: center;
+     align-items: center;
+     background-color: #3282B8;
+     color: #fff;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+     z-index: 9999;
+
+     transition: width 0.1s ease;
 }
 
 .mon-compte #check-compte{
@@ -1639,43 +1671,169 @@ main {
 
 @media only screen and (max-width: 900px){
      .nav-link-compte i.arrow{
-          position: absolute;
-          top: 149px;
-          left: 33px;
+          top: 133px;
+          left: 85px;
      }
 
      main {
-          position: absolute;
-          top: 70px;
-          right: 0;
-     
-          margin-left: 300px;
-          padding: 1rem;
+          margin-left: 120px;
      }
      
      .navbar-compte {
-          top: 100px;
-          width: 100px;
+          top: 90px;
+          width: 120px;
+          height: calc(100vh - 60px - 30px);
      }
 
      .mon-compte label i.toogle{
-          display: block;
+          display: flex;
+     }
+
+     
+
+     .nav-link-compte{
+          padding-left: 0rem;
+          justify-content: center;
+     }
+
+     .nav-link-compte label{
+          justify-content: center;
      }
 
      .item-text-compte{
           display: none;
      }
 
-     .mon-compte #check-compte:checked ~ .navbar-compte{
-          width: 287px;
+     .submenu > li{
+          justify-content: center;
+     }
+
+     .submenu > li > a{
+          margin-left: 0rem;
+     }
+     
+     .submenu > li > a > i{
+          margin-right: 0.5rem;
      }
 
      .mon-compte #check-compte:checked ~ .navbar-compte{
-          width: 287px;
+          width: 200px;
+     }
+
+     .mon-compte #check-compte:checked ~ label i.toogle{
+          width: 200px;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte{
+          padding-left: 1.5rem;
+          justify-content: flex-start;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte i.arrow{
+          top: 133px;
+          left: 170px;
      }
 
      .mon-compte #check-compte:checked ~ .navbar-compte ul li .item-text-compte{
           display: block;
+     }
+
+     .mon-compte #check-compte:checked ~ main{
+          margin-left: 200px;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte ul li .nav-link-compte label{
+          justify-content: flex-start;
+     }
+     
+
+}
+
+
+@media only screen and (max-width: 500px){
+     .nav-link-compte i.arrow{
+          top: 133px;
+          left: 55px;
+     }
+
+     main {
+          margin-left: 80px;
+     }
+     
+     .navbar-compte {
+          top: 90px;
+          width: 80px;
+          height: calc(100vh - 60px - 30px);
+     }
+
+     .mon-compte label i.toogle{
+          width: 80px;
+     }
+
+
+     .nav-link-compte{
+          padding-left: 0rem;
+          justify-content: center;
+     }
+
+     .submenu > li > a{
+          margin-left: 0rem;
+     }
+     
+     .submenu > li > a > i{
+          margin-right: 0.3rem;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte{
+          width: 200px;
+     }
+
+     .mon-compte #check-compte:checked ~ label i.toogle{
+          width: 200px;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte{
+          padding-left: 1.5rem;
+          justify-content: flex-start;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte i.arrow{
+          top: 133px;
+          left: 170px;
+     }
+
+     .mon-compte #check-compte:checked ~ main{
+          margin-left: 200px;
+     }
+
+     .submenu a i{
+          display: none;
+     }
+}
+
+@media only screen and (max-width: 400px){
+     
+
+     .mon-compte #check-compte:checked ~ .navbar-compte{
+          width: 100%;
+     }
+
+     .mon-compte #check-compte:checked ~ label i.toogle{
+          width: 100%;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte i.arrow{
+          top: 133px;
+          left: 290px;
+     }
+
+     .mon-compte #check-compte:checked ~ main{
+          margin-left: 100%;
+     }
+
+     .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte{
+          padding-left: 30%;
+          justify-content: flex-start;
      }
 }
 /*--------------------------------*/
