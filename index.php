@@ -48,7 +48,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
                 </div>
             </div>
             <div class="signinup">
-            <?php if ($_SESSION['id_utilisateur'] == false) : ?>
+                <?php if ($_SESSION['id_utilisateur'] == false) : ?>
                 <div>
                     <a href="seConnecter.php">Sign In</a>
                 </div>
@@ -111,28 +111,24 @@ if (!isset($_SESSION['id_utilisateur'])) {
             <div class="box-review">
                 <img src="img/intro/intro2.jpg" alt="img2" />
                 <div class="text-review">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur nostrum numquam voluptatem debitis odit nisi, cum sit
-                    ipsa consequuntur minus eius doloribus obcaecati corporis
-                    exercitationem deserunt suscipit quis veritatis aspernatur.
+                    The Nest Hello has the best video quality and HDR support. En outre, cela s'intègre à Google
+                    Ecosystème. Il enregistre tout, 24/7. Vous pouvez le connecter à l'application que vous pouvez
+                    contrôler avec votre téléphone. Nest Hello traite la sonnette comme un système de sécurité normal.
                 </div>
             </div>
             <div class="box-review">
                 <img src="img/intro/intro3.jpg" alt="img3" />
                 <div class="text-review">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur nostrum numquam voluptatem debitis odit nisi, cum sit
-                    ipsa consequuntur minus eius doloribus obcaecati corporis
-                    exercitationem deserunt suscipit quis veritatis aspernatur.
+                    Networking Hub est centralisé. Avec Philips Hue Hub et smartthings hub. Home Run héberge
+                    également le routeur Wi-Fi. Le réseau maillé est amplifié HD.
                 </div>
             </div>
             <div class="box-review">
                 <img src="img/intro/intro4.jpg" alt="img4" />
                 <div class="text-review">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur nostrum numquam voluptatem debitis odit nisi, cum sit
-                    ipsa consequuntur minus eius doloribus obcaecati corporis
-                    exercitationem deserunt suscipit quis veritatis aspernatur.
+                    Caméra de sécurité a un agent en direct de l'autre côté qui vérifie chaque mouvement. De plus,
+                    s'il y a une menace quelconque, ils réagissent en adressant un avertissement à l'intrus et ils
+                    appelleront également la police.
                 </div>
             </div>
         </div>
