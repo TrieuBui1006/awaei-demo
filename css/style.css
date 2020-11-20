@@ -173,7 +173,7 @@ header.header-nav .navbar-logo a.logo:hover img{
 
      overflow: none;
      cursor: pointer;
-     z-index: 999;
+     z-index: 9999;
 
      transition: all 0.3s ease-in-out;
 }
@@ -257,7 +257,7 @@ header.header-nav .navbar-logo a.logo:hover img{
      height: 100vh;
 
      background: #3282B8;
-     z-index: 99;
+     z-index: 999;
 
      transition: all 0.3s ease-in-out;
 }
@@ -1485,7 +1485,6 @@ section.signup form .container .input-box{
 
 section .mon-compte{
      position: relative;
-     z-index: 999;
 }
 
 main {
@@ -1508,7 +1507,7 @@ main {
 
      display: block;
      background-color: #3282B8;
-     z-index: 9999;
+     z-index: 2;
      transition: width 0.1s ease;
 }
 
@@ -1660,7 +1659,7 @@ main {
      background-color: #3282B8;
      color: #fff;
      border-bottom: 1px solid rgba(0, 0, 0, 0.7);
-     z-index: 9999;
+     z-index: 2;
 
      transition: width 0.1s ease;
 }
@@ -1825,10 +1824,6 @@ main {
      .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte i.arrow{
           top: 133px;
           left: 290px;
-     }
-
-     .mon-compte #check-compte:checked ~ main{
-          margin-left: 100%;
      }
 
      .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte{
