@@ -5,7 +5,7 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 // On récupère le mot de passe qui correspond au pseudo saisi
-$req = $bdd->prepare('SELECT id_utilisateur, mot_de_passe FROM membres WHERE email = ?');
+$req = $bdd->prepare('SELECT id_utilisateur, mot_de_passe, role_utilisateur FROM membres WHERE email = ?');
 $req->execute(array($_POST['email']));
 $resultat = $req->fetch();
 // Le mot de passe est le bon
@@ -25,13 +25,18 @@ if (!$resultat) {
 else {
     // Le mot de passe est le bon
     if ($isPasswordCorrect) {
-        // On crée la session de l'utilisateur
-        session_start();
-        $_SESSION['id_utilisateur'] = $resultat['id_utilisateur'];
-        $_SESSION['email'] = $_POST['email'];
-        $_SESSION['prenom'] = $_POST['prenom'];
-        $_SESSION['nom'] = $_POST['nom'];
-        header('Location: index.php');
+        if ($resultat['role_utilisateur'] == 0) {
+            session_start();
+            $_SESSION['id_utilisateur'] = $resultat['id_utilisateur'];
+            $_SESSION['role_utilisateur'] = $resultat['role_utilisateur'];
+            header('Location: monCompte.php');
+        }
+        if ($resultat['role_utilisateur'] == 1) {
+            session_start();
+            $_SESSION['id_utilisateur'] = $resultat['id_utilisateur'];
+            $_SESSION['role_utilisateur'] = $resultat['role_utilisateur'];
+            header('Location: adminDashboard.php');
+        }
     }
     // Le mot de passe n'est pas le bon
     else {

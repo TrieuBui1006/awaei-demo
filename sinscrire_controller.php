@@ -14,6 +14,7 @@ $error_motDePasse = FALSE;
 $error_motDePasse_conditions = FALSE;
 $error_telephone = FALSE;
 $error_emailWorng = FALSE;
+$role_utilisateur = 0;
 // Le pseudo est déjà utilisé
 if ($resultat) {
 	// Il y a donc une erreur
@@ -45,16 +46,16 @@ else {
 		// On crypte le mot de passe			
 		$pass_hache = password_hash($_POST['motDePasse'], PASSWORD_DEFAULT);
 		// On ajoute le nouvel utilisateur dans la BDD
-		$req = $bdd->prepare('INSERT INTO membres (prenom, nom, email, mot_de_passe, telephone) VALUES(?, ?, ?, ?, ?)');
-		$req->execute(array($_POST['prenom'], $_POST['nom'], $_POST['email'], $pass_hache, $_POST['telephone']));
+		$req = $bdd->prepare('INSERT INTO membres (prenom, nom, email, mot_de_passe, telephone, role_utilisateur) VALUES(?, ?, ?, ?, ?, ?)');
+		$req->execute(array($_POST['prenom'], $_POST['nom'], $_POST['email'], $pass_hache, $_POST['telephone'], $role_utilisateur));
 		// On récupère l'identifiant du nouvel utilisateur
-		$req = $bdd->prepare('SELECT id_utilisateur FROM membres WHERE email = ?');
+		$req = $bdd->prepare('SELECT id_utilisateur, role_utilisateur FROM membres WHERE email = ?');
 		$req->execute(array($_POST['pseudo_user']));
 		$resultat = $req->fetch();
 		// On crée une session pour le nouvel utilisateur
 		session_start();
 		$_SESSION['id_utilisateur'] = $resultat['id_utilisateur'];
-		$_SESSION['role'] = $resultat["role"];
+		$_SESSION['role_utilisateur'] = $resultat['role_utilisateur'];
 		header('Location: index.php');
 	}
 	// Les deux mot de passe sont différents

@@ -1,8 +1,7 @@
-
 <header class="header-nav">
     <div class="navbar-logo">
         <a href="#mainpage" class="logo">
-            <img src="img/logo/logo2.png" alt="logo"/>
+            <img src="img/logo/logo2.png" alt="logo" />
         </a>
     </div>
 
@@ -57,11 +56,16 @@
 
             <?php if ($_SESSION['id_utilisateur'] == false) : ?>
             <li><a href="seConnecter.php" class="nav-link">Se connecter</a></li>
-            <li><a href="sinscrire.php" class="nav-link">S'inscrire</a></li>
             <?php endif; ?>
 
             <?php if ($_SESSION['id_utilisateur'] == true) : ?>
-            <li><a href="monCompte.php" class="nav-link">Mon Compte</a></li>
+            <?php if ($_SESSION['role_utilisateur'] == 1) : ?>
+            <li><a href="adminDashboard.php" class="nav-link">Admin</a></li>
+            <?php endif; ?>
+
+            <?php if ($_SESSION['role_utilisateur'] == 0) : ?>
+            <li><a href="monCompte.php" class="nav-link">MonCompte</a></li>
+            <?php endif; ?>
             <li><a href="deconnection.php" class="nav-link">Deconnection</a></li>
             <?php endif; ?>
         </ul>

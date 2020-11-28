@@ -2,6 +2,10 @@
 session_start();
 if (!isset($_SESSION['id_utilisateur'])) {
     $_SESSION['id_utilisateur'] = false;
+    header('Location: index.php');
+}
+if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
+    header('Location: index.php');
 }
 ?>
 
@@ -60,7 +64,8 @@ if (!isset($_SESSION['id_utilisateur'])) {
                 <input type="password" placeholder="Entrer Mot De Passe" name="motDePasse_check" required />
 
                 <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px" >En créant un compte, vous acceptez </input>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px">En créant un
+                    compte, vous acceptez </input>
                     <a href="#" style="color: dodgerblue">nos conditions et notre confidentialité</a>.
                 </label>
 
