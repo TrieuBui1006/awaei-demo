@@ -2,7 +2,7 @@
     <ul class="navbar-nav-compte">
 
         <li class="nav-item-compte">
-            <a href="#" class="nav-link-compte">
+            <a href="sinscrire.php" class="nav-link-compte">
                 <i class="fas fa-splotch"></i>
                 <span class="item-text-compte">Creation Client Compte</span>
             </a>
@@ -30,16 +30,16 @@
         </li>
 
         <li class="nav-item-compte">
-            <a href="#" class="nav-link-compte">
+            <a href="salle_creation.php" class="nav-link-compte">
                 <i class="fas fa-pallet"></i>
-                <span class="item-text-compte">Creation Chambre</span>
+                <span class="item-text-compte">Creation Salle</span>
             </a>
         </li>
 
         <li class="nav-item-compte">
             <a href="#" class="nav-link-compte">
                 <i class="fas fa-pallet"></i>
-                <span class="item-text-compte">Chambre Liste</span>
+                <span class="item-text-compte">Salle Liste</span>
             </a>
         </li>
 

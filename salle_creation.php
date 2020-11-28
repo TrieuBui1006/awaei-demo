@@ -89,45 +89,6 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
                         </div>
                     </div>
                 </form>
-
-                <?php
-                // Si le pseudo est déjà utilisé par un autre utilisateur
-                if (isset($_GET['error_emailDuplicate']) && $_GET['error_emailDuplicate'] == TRUE) {
-                ?>
-                <p>Cet email est déjà utilisé !</p>
-                <?php
-                }
-                // Si les deux mots de passe écrits sont différents
-                if (isset($_GET['error_motDePasse']) && $_GET['error_motDePasse'] == TRUE) {
-                ?>
-                <p>Les deux mots de passe que vous avez écrits étaient différents !</p>
-                <?php
-                }
-                // Si l'adresse e-mail saisie n'est pas valide
-                if (isset($_GET['error_emailWorng']) && $_GET['error_emailWorng'] == TRUE) {
-                ?>
-                <p>L'adresse e-mail que vous avez entrée n'est pas valide !</p>
-                <?php
-                }
-                // Si le numéro de téléphone n'est pas valide
-                if (isset($_GET['error_telephone']) && $_GET['error_telephone'] == TRUE) {
-                ?>
-                <p>Le numéro de téléphone que vous avez entré n'est pas valide !</p>
-                <?php
-                }
-                // Si le mot de passe ne respecte pas les conditions requises
-                if (isset($_GET['error_password_conditions']) && $_GET['error_password_conditions'] == TRUE) {
-                ?>
-                <p>Le mot de passe que vous avez choisi n'est pas valide !</p>
-                <p>Il doit contenir au moins 8 caractères avec au moins :
-                <ul>
-                    <li>Une majuscule</li>
-                    <li>Une minuscule</li>
-                    <li>Un chiffre</li>
-                </ul>
-                <?php
-                }
-                    ?>
             </section>
 
         </main>
