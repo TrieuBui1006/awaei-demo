@@ -20,7 +20,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
     <link rel="icon" type="image/png" href="../img/logo.jpg" />
 
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Les Viets - Salle Creation</title>
+    <title>Les Viets - Maison Creation</title>
 </head>
 
 <body id="mainpage">
@@ -44,28 +44,31 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
 
         <main>
             <section class="signup">
-                <form method="post" action="salle_creation_controller.php">
+                <form method="post" action="maison_creation_controller.php">
                     <div class="container">
                         <h1>Create une nouvelle salle</h1>
                         <p>Veuillez remplir ce formulaire pour créer une salle.</p>
 
-                        <label for="nom_salle"><b>Nom de Salle <span style="color: red;">*</span></b></label>
-                        <input type="text" placeholder="Entrez Nom de Salle" name="nom_salle" required />
+                        <label for="nom_maison"><b>Nom de Maison <span style="color: red;">*</span></b></label>
+                        <input type="text" placeholder="Entrez Nom de Maison" name="nom_maison" required />
 
-                        <input type="checkbox" id="tempSalle" name="tempSalle" value="true">
-                        <label for="tempSalle"> Capteur Temp de Salle </label><br>
+                        <input type="checkbox" id="tempSalle" name="salon" value="true">
+                        <label for="salon"> Salon </label><br>
 
-                        <input type="checkbox" id="tempEau" name="tempEau" value="true">
-                        <label for="tempEau"> Capteur Temp de l'eau </label><br>
+                        <label for="nb_chambre"><b>Nombre de Chambres <span style="color: red;">*</span></b></label>
+                        <input type="number" placeholder="Entrez Nombre de Chambres" name="nb_chambre" required />
 
-                        <input type="checkbox" id="lumiere" name="lumiere" value="true">
-                        <label for="lumiere"> Controlle de lumiere </label><br><br>
+                        <input type="checkbox" id="cuisine" name="cuisine" value="true">
+                        <label for="cuisine"> Cuisine </label><br><br>
 
-                        <input type="checkbox" id="radiateur" name="radiateur" value="true">
-                        <label for="radiateur"> Controlle de Radiateur </label><br><br>
+                        <label for="nb_sdb"><b>Nombre de Salles de Bain <span style="color: red;">*</span></b></label>
+                        <input type="number" placeholder="Entrez Nombre de Salles de Bain" name="nb_sdb" required />
 
-                        <input type="checkbox" id="eauChaude" name="eauChaude" value="true">
-                        <label for="eauChaude"> Controlle de l'Eau Chaude </label><br><br>
+                        <input type="checkbox" id="garage" name="garage" value="true">
+                        <label for="garage"> Garage </label><br><br>
+
+                        <input type="checkbox" id="couloir" name="couloir" value="true">
+                        <label for="couloir"> Couloir </label><br><br>
 
                         <div class="clearfix">
                             <button type="submit">Submit</button>

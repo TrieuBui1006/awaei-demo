@@ -4,7 +4,7 @@
         <li class="nav-item-compte">
             <a href="sinscrire.php" class="nav-link-compte">
                 <i class="fas fa-splotch"></i>
-                <span class="item-text-compte">Creation Client Compte</span>
+                <span class="item-text-compte">Creation Client</span>
             </a>
         </li>
 
@@ -16,7 +16,7 @@
         </li>
 
         <li class="nav-item-compte">
-            <a href="#" class="nav-link-compte">
+            <a href="maison_creation.php" class="nav-link-compte">
                 <i class="fas fa-pallet"></i>
                 <span class="item-text-compte">Creation Maison</span>
             </a>

@@ -1,5 +1,5 @@
 <?php
-    /*header('Content-Type: application/json');
+/*header('Content-Type: application/json');
 
     $aResult = array();
 
@@ -62,6 +62,8 @@ if (isset($_POST["modbus_function"])) {
         echo "Second: $data[13]\n";
     }
 
+
+    
     $adresse = 87;                  // ventilo
     // 59*2 = 118
     // 87*2 = 174
@@ -137,17 +139,18 @@ if (isset($_POST["modbus_function"])) {
 */
 
 
-function getTemp() {
+function getTemp()
+{
     //init_modbus();
-    // require_once dirname(__FILE__) . '/../Phpmodbus/Phpmodbus/ModbusMaster.php';
+    //require_once dirname(__FILE__) . '/../Phpmodbus/Phpmodbus/ModbusMaster.php';
     require_once('Phpmodbus/Phpmodbus/ModbusMaster.php');
 
     $ip = "192.168.52.232";
     $port = 502;
     $debut = 16;
     $nbits = 20;
-    $modbus = new ModbusMaster($ip,"TCP",$port);
-    $data = $modbus->fc3(1,$debut, $nbits);
+    $modbus = new ModbusMaster($ip, "TCP", $port);
+    $data = $modbus->fc3(1, $debut, $nbits);
     // $data[1] = rand()%10 + 2;
     // $data[5] = rand()%10 + 6;
     // $data[9] = rand()%10 + 10;
@@ -156,13 +159,12 @@ function getTemp() {
     echo "Sonde2: $data[3] degree \n";
     echo "Sonde3: $data[5] degree \n";
     echo "Sonde4: $data[7] degree \n";
-    for ($i = 0; $i < 20; $i++){
-        echo "$data[$i] \n";
-    }
+
     return $data;
 }
 
-function getTime() {
+function getTime()
+{
     //init_modbus();
     require_once dirname(__FILE__) . '/Phpmodbus/Phpmodbus/ModbusMaster.php';
     //require_once('Phpmodbus/Phpmodbus/ModbusMaster.php');
@@ -172,8 +174,8 @@ function getTime() {
 
     $debut = 29;
     $nbits = 20;
-    $modbus = new ModbusMaster($ip,"TCP",$port);
-    $data = $modbus->fc3(1,$debut, $nbits);
+    $modbus = new ModbusMaster($ip, "TCP", $port);
+    $data = $modbus->fc3(1, $debut, $nbits);
     // $data[1] = 1;
     // $data[9] = 9;
     // $data[13] = 13;
@@ -185,5 +187,3 @@ function getTime() {
 
 getTemp();
 getTime();
-
-?>
