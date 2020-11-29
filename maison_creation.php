@@ -46,29 +46,49 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
             <section class="signup">
                 <form method="post" action="maison_creation_controller.php">
                     <div class="container">
-                        <h1>Create une nouvelle salle</h1>
+                        <h1>Create une maison</h1>
                         <p>Veuillez remplir ce formulaire pour créer une salle.</p>
 
                         <label for="nom_maison"><b>Nom de Maison <span style="color: red;">*</span></b></label>
                         <input type="text" placeholder="Entrez Nom de Maison" name="nom_maison" required />
 
-                        <input type="checkbox" id="tempSalle" name="salon" value="true">
-                        <label for="salon"> Salon </label><br>
+                        <div class="switch-content">
+                            <label class="switch-titre" for="salon"><b>Salon:</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="salon">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
 
                         <label for="nb_chambre"><b>Nombre de Chambres <span style="color: red;">*</span></b></label>
                         <input type="number" placeholder="Entrez Nombre de Chambres" name="nb_chambre" required />
 
-                        <input type="checkbox" id="cuisine" name="cuisine" value="true">
-                        <label for="cuisine"> Cuisine </label><br><br>
+                        <div class="switch-content">
+                            <label class="switch-titre" for="cuisine"><b>Cuisine:</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="cuisine">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
 
                         <label for="nb_sdb"><b>Nombre de Salles de Bain <span style="color: red;">*</span></b></label>
                         <input type="number" placeholder="Entrez Nombre de Salles de Bain" name="nb_sdb" required />
 
-                        <input type="checkbox" id="garage" name="garage" value="true">
-                        <label for="garage"> Garage </label><br><br>
+                        <div class="switch-content">
+                            <label class="switch-titre" for="garage"><b>Garage:</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="garage">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
 
-                        <input type="checkbox" id="couloir" name="couloir" value="true">
-                        <label for="couloir"> Couloir </label><br><br>
+                        <div class="switch-content">
+                            <label class="switch-titre" for="couloir"><b>Couloir:</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="couloir">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
 
                         <div class="clearfix">
                             <button type="submit">Submit</button>

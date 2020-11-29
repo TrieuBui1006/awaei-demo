@@ -46,26 +46,51 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
             <section class="signup">
                 <form method="post" action="salle_creation_controller.php">
                     <div class="container">
-                        <h1>Create une nouvelle salle</h1>
+                        <h1>Create une salle</h1>
                         <p>Veuillez remplir ce formulaire pour créer une salle.</p>
 
                         <label for="nom_salle"><b>Nom de Salle <span style="color: red;">*</span></b></label>
                         <input type="text" placeholder="Entrez Nom de Salle" name="nom_salle" required />
 
-                        <input type="checkbox" id="tempSalle" name="tempSalle" value="true">
-                        <label for="tempSalle"> Capteur Temp de Salle </label><br>
+                        <div class="switch-content">
+                            <label class="switch-titre" for="tempSalle"><b>Capteur Temp de Salle:</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="tempSalle">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
 
-                        <input type="checkbox" id="tempEau" name="tempEau" value="true">
-                        <label for="tempEau"> Capteur Temp de l'eau </label><br>
+                        <div class="switch-content">
+                            <label class="switch-titre" for="tempEau"><b>Capteur Temp de l'eau:</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="tempEau">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
 
-                        <input type="checkbox" id="lumiere" name="lumiere" value="true">
-                        <label for="lumiere"> Controlle de lumiere </label><br><br>
+                        <div class="switch-content">
+                            <label class="switch-titre" for="lumiere"><b>Controlle de lumiere:</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="lumiere">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
 
-                        <input type="checkbox" id="radiateur" name="radiateur" value="true">
-                        <label for="radiateur"> Controlle de Radiateur </label><br><br>
+                        <div class="switch-content">
+                            <label class="switch-titre" for="radiateur"><b>Controlle de Radiateur:</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="radiateur">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
 
-                        <input type="checkbox" id="eauChaude" name="eauChaude" value="true">
-                        <label for="eauChaude"> Controlle de l'Eau Chaude </label><br><br>
+                        <div class="switch-content">
+                            <label class="switch-titre" for="eauChaude"><b>Controlle de l'Eau Chaude:</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="eauChaude">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
 
                         <div class="clearfix">
                             <button type="submit">Submit</button>

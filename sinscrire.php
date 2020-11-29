@@ -59,13 +59,17 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
                                 <input type="text" placeholder="Nom" name="nom" required />
                             </div>
                         </div>
-
-                        <label for="telephone"><b>Téléphone <span style="color: red;">*</span></b></label>
-                        <input type="tel" placeholder="Entrez Numéro de Téléphone" name="telephone" required />
-
-                        <label for="email"><b>Email <span style="color: red;">*</span></b></label>
-                        <input type="email" placeholder="Entrez Email" name="email" required />
-
+                        <div class="input-box">
+                            <div>
+                                <label for="telephone"><b>Téléphone <span style="color: red;">*</span></b></label>
+                                <input type="tel" placeholder="Entrez Numéro de Téléphone" name="telephone" required />
+                            </div>
+                            <div>
+                                <label for="email"><b>Email <span style="color: red;">*</span></b></label>
+                                <input type="email" placeholder="Entrez Email" name="email" required />
+                            </div>
+                        </div>
+        
                         <!-- <label for="rp-email"><b>Repeat Email</b></label>
                 <input type="email" placeholder="Repeat Email" name="rp-email" required /> -->
 

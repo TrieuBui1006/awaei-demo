@@ -1332,14 +1332,13 @@ section.signup {
   align-items: center;
   text-align: center;
   width: 100%;
-  min-height: calc(100vh);
 
   position: relative;
 
   background: var(--secondaryColor);
 
   margin: 0 auto;
-  padding: 0px 20px 0px 20px;
+  padding: 0;
 }
 
 section.signup form {
@@ -1366,7 +1365,7 @@ section.signup form .container {
 
   align-items: center;
 
-  padding: 30px 50px 30px 50px;
+  padding: 30px;
 }
 
 section.signup form .container h1 {
@@ -1379,13 +1378,27 @@ section.signup form .container h1 {
 }
 
 section.signup form .container p {
-  margin: 10px 0 40px 0;
+  margin: 10px 0 25px 0;
+}
+
+section.signup form .container div.switch-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 section.signup form .container label {
   text-align: left;
 
   width: 100%;
+}
+
+section.signup form .container label.switch-titre {
+  width: auto;
+  padding-right: 20px;
 }
 
 section.signup form .container .input-box {
@@ -1410,12 +1423,13 @@ section.signup form .container .input-box {
 .signup form .container input[type='text'],
 .signup form .container input[type='email'],
 .signup form .container input[type='tel'],
-.signup form .container input[type='password'] {
+.signup form .container input[type='password'],
+.signup form .container input[type='number'] {
   display: inline-block;
   width: 100%;
 
-  padding: 15px 5px;
-  margin: 5px 0 22px 0;
+  padding: 10px 5px;
+  margin: 5px 0 15px 0;
   border: none;
   border: 1px solid rgb(20, 20, 20, 0.5);
   border-radius: 2px;
@@ -1432,7 +1446,9 @@ section.signup form .container .input-box {
 .signup form .container input[type='tel']:focus,
 .signup form .container input[type='tel']:valid,
 .signup form .container input[type='password']:focus,
-.signup form .container input[type='password']:valid {
+.signup form .container input[type='password']:valid,
+.signup form .container input[type='number']:focus,
+.signup form .container input[type='number']:valid {
   background-color: rgba(224, 224, 224, 0.5);
 
   outline: none;
@@ -1481,10 +1497,10 @@ section .mon-compte {
 
 main {
   position: absolute;
-  top: 60px;
+  top: 70px;
   right: 0;
 
-  width: calc(100vw - 300px);
+  width: calc(100vw - 297px);
   padding: 1rem;
 
   transition: width 0.1s ease;
@@ -1664,7 +1680,7 @@ main {
   }
 
   main {
-    width: calc(100vw - 120px);
+    width: calc(100vw - 130px);
   }
 
   .navbar-compte {
@@ -1752,17 +1768,17 @@ main {
   }
 
   main {
-    width: calc(100vw - 80px);
+    width: calc(100vw - 70px);
   }
 
   .navbar-compte {
     top: 90px;
-    width: 80px;
+    width: 60px;
     height: calc(100vh - 60px - 30px);
   }
 
   .mon-compte label i.toogle {
-    width: 80px;
+    width: 60px;
   }
 
   .nav-link-compte {
@@ -2071,4 +2087,68 @@ footer {
   .footer-content {
     grid-template-areas: 'box-image box-info box-support box-email';
   }
+}
+
+/* input switch */
+/* The switch - the box around the slider */
+section.signup form .container label.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
