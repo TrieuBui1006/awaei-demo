@@ -19,7 +19,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
     <!--LogoPage-->
     <link rel="icon" type="image/png" href="../img/logo.jpg" />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Les Viets - Salle Creation</title>
 </head>
 

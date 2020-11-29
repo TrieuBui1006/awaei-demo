@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "VIETSAF groupe",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "plotly.js-dist": "^1.57.1"
+  }
 }
