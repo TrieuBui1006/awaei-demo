@@ -1,59 +1,60 @@
 <footer>
-      <div class="footer-content">
-        <div class="f-content-box box-image">
-          <div class="logo-box">
-            <img src="img/logo.jpg" alt="logos">
-          </div>
-          <div class="icons-box">
-            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="ytb"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="inst"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="f-content-box box-support">
-          <div class="header-box">
-            <h2>Support</h2>
-          </div>
-          <div class="list-box">
-            <ul>
-              <li>AAA</li>
-              <li>AAA</li>
-              <li>AAA</li>
-              <li>AAA</li>
-              <li>AAA</li>
-            </ul>
-          </div>
-        </div>
-        <div class="f-content-box box-info">
-          <div class="header-box">
-            <h2>Informations</h2>
-          </div>
-          <div class="list-box">
-            <ul>
-              <li>BBB</li>
-              <li>BBB</li>
-              <li>BBB</li>
-              <li>BBB</li>
-              <li>BBB</li>
-            </ul>
-          </div>
-        </div>
-        <div class="f-content-box box-email">
-          <div class="header-box">
-            <h2>Support</h2>
-          </div>
-          <div class="input-box">
-            <form>
-              <input class="email" type="email" name="email" placeholder="Type your email...">
-              <input class="submit" type="submit" value="Send">
-            </form>
-          </div>
-        </div>
-      </div>       
+          <div class="container">
+               <div class="sec aboutus">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus reiciendis soluta sint eaque est. Unde consectetur quas ducimus corporis tempora, inventore fugit voluptas impedit modi culpa. Esse fuga nihil nisi!</p>
+               
+                    <ul class="sci">
+                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                         <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
+               </div>
+          
+               <div class="sec support">
+                    <h2>Support</h2>
+                    <ul>
+                         <li><a href="#">LE Quang Linh</a></li>
+                         <li><a href="#">LE Quang Linh</a></li>
+                         <li><a href="#">LE Quang Linh</a></li>
+                         <li><a href="#">LE Quang Linh</a></li>
+                    </ul>
+               </div>
 
-      <div class="footer-copyright">
-        <div class="f-content">&copy; Copyright 2020</div>
-        <div class="f-content">Designed by ABC</div>
-      </div>
-    </footer>
+               <div class="sec quicklinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                         <li><a href="#">About</a></li>
+                         <li><a href="#">FAQ</a></li>
+                         <li><a href="#">Privary Policy</a></li>
+                         <li><a href="#">Help</a></li>
+                         <li><a href="#">Terms & Consitions</a></li>
+                         <li><a href="#">Contact</a></li>
+                    </ul>
+               </div>
+
+               <div class="sec contact">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                         <li>
+                              <span><i class="fa fa-map-market" aria-hidden="true"></i></span>
+                              <span>7 rue des Gallieres<br>
+                              41000 Blois,<br>France</span>
+                         </li>
+                         <li>
+                              <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                              <p><a href="tel:12345678900">+33 7 76 08 56 39</a><br>
+                                   <a href="tel:12345678900">+33 7 76 08 56 39</a></p>
+                         </li>
+                         <li>
+                              <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                              <p><a href="mailto:vietsaf@gmail.com">vietsaf@gmail.com</a></p>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </footer>
+     <div class="copyrightText">
+          <p>Copyright @ 2020 Online Tutorials. All Rights Reserved.</p>
+     </div>
