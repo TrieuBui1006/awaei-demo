@@ -46,6 +46,9 @@ session_start();
             <div id="chart"></div>
 
         </div>
+
+        <button onclick="writeBit()">Write Bit</button>
+
         <div class="flexBoxTemp">
             <div class="childBox">
                 <h3>Salon</h3>
@@ -109,6 +112,7 @@ setInterval(updateNameDisplay, 1000);
 
 var result_temp = 0;
 var result_time = 0;
+var write_result = 0;
 
 function getTemp() {
     jQuery.ajax({
@@ -150,6 +154,29 @@ function getTime() {
             }
         }
     });
+}
+
+function writeBit() {
+    jQuery.ajax({
+        type: "POST",
+        url: 'utils/modbus.php',
+        dataType: 'json',
+        data: {
+            functionname: 'writeBit',
+            arguments: 0
+        },
+
+        success: function(obj, textstatus) {
+            if (!('error' in obj)) {
+                write_result = obj.result;
+                console.log(write_result);
+            } else {
+                console.log(obj.error);
+            }
+        }
+    });
+
+    console.log("Button actived");
 }
 
 function updateNameDisplay() {

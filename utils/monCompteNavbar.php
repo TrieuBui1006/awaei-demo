@@ -9,7 +9,7 @@
         </li>
 
         <li class="nav-item-compte">
-            <a href="#" class="nav-link-compte">
+            <a href="salon.php" class="nav-link-compte">
                 <i class="fas fa-pallet"></i>
                 <span class="item-text-compte">Mon Salon</span>
             </a>

@@ -29,15 +29,22 @@
                 <li>
                     <a href="seConnecter.php"><span class="link-text">Se connecter</span></a>
                 </li>
-                <li>
-                    <a href="sinscrire.php"><span class="link-text">S'inscrire</span></a>
-                </li>
+
                 <?php endif; ?>
 
                 <?php if ($_SESSION['id_utilisateur'] == true) : ?>
+                <?php if ($_SESSION['role_utilisateur'] == 0) : ?>
                 <li>
                     <a href="monCompte.php"><span class="link-text">Mon Compte</span></a>
                 </li>
+                <?php endif; ?>
+
+                <?php if ($_SESSION['role_utilisateur'] == 1) : ?>
+                <li>
+                    <a href="adminDashboard.php"><span class="link-text">Admin</span></a>
+                </li>
+                <?php endif; ?>
+
                 <li>
                     <a href="deconnection.php"><span class="link-text">Deconnection</span></a>
                 </li>

@@ -1335,7 +1335,6 @@ section.signup {
 
   position: relative;
 
-
   margin: 0 auto;
   padding: 0;
 }
@@ -1855,7 +1854,7 @@ main {
 /*Footer*/
 /*--------------------------------*/
 
-footer{
+footer {
   position: relative;
   width: 100%;
   height: auto;
@@ -1863,23 +1862,23 @@ footer{
   background: #000;
 }
 
-footer .container{
+footer .container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-footer .container .sec{
+footer .container .sec {
   margin-right: 20px;
 }
 
-footer .container .sec.aboutus{
+footer .container .sec.aboutus {
   width: 30%;
   text-align: left;
 }
 
-footer .container h2{
+footer .container h2 {
   position: relative;
   color: #fff;
   font-weight: 500;
@@ -1888,32 +1887,32 @@ footer .container h2{
   font-size: 2rem;
 }
 
-footer .container h2::before{
+footer .container h2::before {
   content: '';
   position: absolute;
   bottom: -5px;
   left: 0;
- width: 50px;
+  width: 50px;
   height: 2px;
   background: #f00;
 }
 
-footer p{
+footer p {
   color: #999;
 }
 
-footer .sci{
+footer .sci {
   margin-top: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-footer .sci li{
+footer .sci li {
   list-style: none;
 }
 
-footer .sci li a{
+footer .sci li a {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -1926,73 +1925,77 @@ footer .sci li a{
   border-radius: 4px;
 }
 
-footer .sci li a:hover{
+footer .sci li a:hover {
   background: #ff0000;
 }
 
-footer .sci li a .fa{
+footer .sci li a .fa {
   color: #fff;
   font-size: 20px;
 }
 
-footer .sec.quicklinks, footer .sec.support {
+footer .sec.quicklinks,
+footer .sec.support {
   position: relative;
   width: 20%;
   text-align: left;
   padding-left: 20px;
 }
 
-footer .sec.quicklinks ul li, footer .sec.support ul li{
+footer .sec.quicklinks ul li,
+footer .sec.support ul li {
   list-style: none;
 }
 
-footer .sec.quicklinks ul li a, footer .sec.support ul li a{
+footer .sec.quicklinks ul li a,
+footer .sec.support ul li a {
   color: #999;
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
 }
 
-footer .sec.quicklinks ul li a:hover, footer .sec.support ul li a:hover{
+footer .sec.quicklinks ul li a:hover,
+footer .sec.support ul li a:hover {
   color: #fff;
 }
 
-footer .sec.contact{
+footer .sec.contact {
   width: calc(30% - 60px);
   margin-right: 0 !important;
   text-align: left;
   padding-left: 20px;
 }
 
-footer .sec.contact .info{
+footer .sec.contact .info {
   position: relative;
 }
 
-footer .sec.contact .info li{
+footer .sec.contact .info li {
   display: flex;
   margin-bottom: 16px;
 }
 
-footer .sec.contact .info li span:nth-child(1){
+footer .sec.contact .info li span:nth-child(1) {
   color: #fff;
   font-size: 20px;
   margin-right: 10px;
 }
 
-footer .sec.contact .info li span{
+footer .sec.contact .info li span {
   color: #999;
 }
 
-footer .sec.contact .info li a{
+footer .sec.contact .info li a {
   color: #999;
   text-decoration: none;
 }
 
-footer .sec.contact .info li a:hover{
+footer .sec.contact .info li a:hover {
   color: #fff;
 }
 
-.copyrightText{
+.copyrightText {
   width: 100%;
   background: #181818;
   padding: 8px 100px;
@@ -2000,63 +2003,62 @@ footer .sec.contact .info li a:hover{
   color: #999;
 }
 
-@media (max-width: 1000px){
-  footer .container .sec.aboutus{
-       width: 50%;
-       padding-bottom: 30px;
+@media (max-width: 1000px) {
+  footer .container .sec.aboutus {
+    width: 50%;
+    padding-bottom: 30px;
   }
-  footer .sec.quicklinks{
-       width: 50%;
-       padding-left: 0;
+  footer .sec.quicklinks {
+    width: 50%;
+    padding-left: 0;
   }
   footer .sec.support {
-       width: 50%;
-       padding-left: 20%;
-       padding-bottom: 30px;
+    width: 50%;
+    padding-left: 20%;
+    padding-bottom: 30px;
   }
-  footer .sec.contact{
-       width: 50%;
-       padding-left: 20%;
+  footer .sec.contact {
+    width: 50%;
+    padding-left: 20%;
   }
-  footer .container .sec{
-       margin-right: 0px;
-
+  footer .container .sec {
+    margin-right: 0px;
   }
 }
 
-@media (max-width: 750px){
-  footer .container .sec.aboutus{
-       width: 50%;
-       padding-bottom: 30px;
+@media (max-width: 750px) {
+  footer .container .sec.aboutus {
+    width: 50%;
+    padding-bottom: 30px;
   }
   footer .sec.support {
-       padding-left: 10%;
+    padding-left: 10%;
   }
-  footer .sec.contact{
-       padding-left: 10%;
+  footer .sec.contact {
+    padding-left: 10%;
   }
 }
 
-@media (max-width: 600px){
-  footer{
-       padding: 50px;
+@media (max-width: 600px) {
+  footer {
+    padding: 50px;
   }
-  footer .container .sec.aboutus{
-       width: 100%;
-       padding-bottom: 20px;
+  footer .container .sec.aboutus {
+    width: 100%;
+    padding-bottom: 20px;
   }
-  footer .sec.quicklinks{
-       width: 100%;
-       padding-bottom: 20px;
+  footer .sec.quicklinks {
+    width: 100%;
+    padding-bottom: 20px;
   }
   footer .sec.support {
-       width: 100%;
-       padding-left: 0;
-       padding-bottom: 20px;
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 20px;
   }
-  footer .sec.contact{
-       width: 100%;
-       padding-left: 0;
-       padding-bottom: 20px;
+  footer .sec.contact {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 20px;
   }
 }
