@@ -1,0 +1,42 @@
+section.mon-compte main div.wrapper{
+     width: 100%;
+     height: 450px;
+}
+
+.flexBoxTemp{
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     justify-content: center;
+     align-items: center;
+     grid-gap: 20px;
+}
+
+.flexBoxTemp .childBox{
+     position: relative;
+     width: 200px;
+     height: 200px;
+     border: 1px solid #000;
+}
+
+.flexBoxTemp .childBox h3{
+     font-size: 1.5rem;
+     font-weight: bold;
+     text-align: center;
+     padding: 15px 0;
+}
+
+.flexBoxTemp .childBox .BoxContent{
+     width: 200px;
+     height: 100px;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.flexBoxTemp .childBox .BoxContent span{
+     font-size: 4rem;
+     font-weight: bold;
+     letter-spacing: 2px;
+}
