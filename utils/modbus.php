@@ -22,8 +22,17 @@ if (!isset($aResult['error'])) {
             $aResult['result'] = getTime();
             break;
 
-        case 'writeBit':
-            $aResult['result'] = writeBit();
+        case 'turnOnVen':
+            $aResult['result'] = turnOnVen();
+
+        case 'turnOffVen':
+            $aResult['result'] = turnOffVen();
+
+        case 'turnOnRes':
+            $aResult['result'] = turnOnRes();
+
+        case 'turnOffRes':
+            $aResult['result'] = turnOffRes();
 
         default:
             $aResult['error'] = 'Not found function ' . $_POST['functionname'] . '!';
@@ -68,15 +77,34 @@ function getTime()
     return $data;
 }
 
-function writeBit()
+function writeBit($adr, $data)
 {
     init_modbus();
 
     $ip = "192.168.52.232";
     $port = 502;
-    $debut = 4;
-    $nbits = 20;
+
     $modbus = new ModbusMaster($ip, "TCP", $port);
-    $data = $modbus->fc15(0, 4, TRUE);
+    $data = $modbus->fc15(0, $adr, $data);
     return true;
+}
+
+function turnOnVen()
+{
+    writeBit(4, TRUE);
+}
+
+function turnOffVen()
+{
+    writeBit(4, FALSE);
+}
+
+function turnOnRes()
+{
+    writeBit(11, TRUE);
+}
+
+function turnOffRes()
+{
+    writeBit(11, FALSE);
 }
