@@ -22,17 +22,21 @@ if (!isset($aResult['error'])) {
             $aResult['result'] = getTime();
             break;
 
-        case 'turnOnVen':
-            $aResult['result'] = turnOnVen();
+        case 'turnOn':
+            $aResult['result'] = turnOnVent();
+            break;
 
-        case 'turnOffVen':
-            $aResult['result'] = turnOffVen();
+        case 'turnOffVent':
+            $aResult['result'] = turnOffVent();
+            break;
 
-        case 'turnOnRes':
-            $aResult['result'] = turnOnRes();
+        case 'turnOnRad':
+            $aResult['result'] = turnOnRad();
+            break;
 
-        case 'turnOffRes':
-            $aResult['result'] = turnOffRes();
+        case 'turnOffRad':
+            $aResult['result'] = turnOffRad();
+            break;
 
         default:
             $aResult['error'] = 'Not found function ' . $_POST['functionname'] . '!';
@@ -77,34 +81,54 @@ function getTime()
     return $data;
 }
 
-function writeBit($adr, $data)
+function turnOnVent()
 {
     init_modbus();
 
+    $debut = 4;
+    $data = array("1");
     $ip = "192.168.52.232";
     $port = 502;
-
+    $dataType = array("BOOLEAN");
     $modbus = new ModbusMaster($ip, "TCP", $port);
-    $data = $modbus->fc15(0, $adr, $data);
-    return true;
+    $modbus->writeMultipleRegister(0, $debut, $data, $dataType);
 }
 
-function turnOnVen()
+function turnOffVent()
 {
-    writeBit(4, TRUE);
+    init_modbus();
+
+    $debut = 4;
+    $data = array("0");
+    $ip = "192.168.52.232";
+    $port = 502;
+    $dataType = array("BOOLEAN");
+    $modbus = new ModbusMaster($ip, "TCP", $port);
+    $modbus->writeMultipleRegister(0, $debut, $data, $dataType);
 }
 
-function turnOffVen()
+function turnOnRad()
 {
-    writeBit(4, FALSE);
+    init_modbus();
+
+    $debut = 11;
+    $data = array("1");
+    $ip = "192.168.52.232";
+    $port = 502;
+    $dataType = array("BOOLEAN");
+    $modbus = new ModbusMaster($ip, "TCP", $port);
+    $modbus->writeMultipleRegister(0, $debut, $data, $dataType);
 }
 
-function turnOnRes()
+function turnOffRad()
 {
-    writeBit(11, TRUE);
-}
+    init_modbus();
 
-function turnOffRes()
-{
-    writeBit(11, FALSE);
+    $debut = 11;
+    $data = array("0");
+    $ip = "192.168.52.232";
+    $port = 502;
+    $dataType = array("BOOLEAN");
+    $modbus = new ModbusMaster($ip, "TCP", $port);
+    $modbus->writeMultipleRegister(0, $debut, $data, $dataType);
 }

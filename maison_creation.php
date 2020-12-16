@@ -46,8 +46,8 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
             <section class="signup">
                 <form method="post" action="maison_creation_controller.php">
                     <div class="container">
-                        <h1>Create une maison</h1>
-                        <p>Veuillez remplir ce formulaire pour créer une salle.</p>
+                        <h1>Creation de maison</h1>
+                        <p>Veuillez remplir ce formulaire pour créer une maison.</p>
 
                         <label for="nom_maison"><b>Nom de Maison <span style="color: red;">*</span></b></label>
                         <input type="text" placeholder="Entrez Nom de Maison" name="nom_maison" required />
@@ -91,7 +91,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
                         </div>
 
                         <div class="clearfix">
-                            <button type="submit">Submit</button>
+                            <button type="submit">Enregistrer</button>
                         </div>
                     </div>
                 </form>

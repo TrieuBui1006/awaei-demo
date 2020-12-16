@@ -123,174 +123,174 @@ if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
 </html>
 
 <script>
-    setInterval(getTemp, 200);
-    setInterval(getTime, 1000);
-    setInterval(updateNameDisplay, 1000);
+setInterval(getTemp, 200);
+setInterval(getTime, 1000);
+setInterval(updateNameDisplay, 1000);
 
-    var result_temp = 0;
-    var result_time = 0;
+var result_temp = 0;
+var result_time = 0;
 
-    function getTemp() {
-        jQuery.ajax({
-            type: "POST",
-            url: 'utils/modbus.php',
-            dataType: 'json',
-            data: {
-                functionname: 'getTemp',
-                arguments: 0
-            },
+function getTemp() {
+    jQuery.ajax({
+        type: "POST",
+        url: 'utils/modbus.php',
+        dataType: 'json',
+        data: {
+            functionname: 'getTemp',
+            arguments: 0
+        },
 
-            success: function(obj, textstatus) {
-                if (!('error' in obj)) {
-                    result_temp = obj.result;
-                    console.log(obj);
-                } else {
-                    console.log(obj.error);
-                }
+        success: function(obj, textstatus) {
+            if (!('error' in obj)) {
+                result_temp = obj.result;
+                console.log(obj);
+            } else {
+                console.log(obj.error);
+            }
+        }
+    });
+}
+
+function getTime() {
+    jQuery.ajax({
+        type: "POST",
+        url: 'utils/modbus.php',
+        dataType: 'json',
+        data: {
+            functionname: 'getTime',
+            arguments: 0
+        },
+
+        success: function(obj, textstatus) {
+            if (!('error' in obj)) {
+                result_time = obj.result;
+                console.log(result_time);
+            } else {
+                console.log(obj.error);
+            }
+        }
+    });
+}
+
+function updateNameDisplay() {
+    document.getElementById('livingroom').innerHTML = (result_temp[0] * 256 + result_temp[1]) / 10;
+    document.getElementById('bedroom1').innerHTML = (result_temp[2] * 256 + result_temp[3]) / 10;
+    document.getElementById('bedroom2').innerHTML = (result_temp[2] * 256 + result_temp[3]) / 10;
+    document.getElementById('bedroom3').innerHTML = (result_temp[4] * 256 + result_temp[5]) / 10;
+    document.getElementById('cuisine').innerHTML = (result_temp[4] * 256 + result_temp[5]) / 10;
+    document.getElementById('bathroom1').innerHTML = (result_temp[6] * 256 + result_temp[7]) / 10;
+    document.getElementById('bathroom2').innerHTML = (result_temp[6] * 256 + result_temp[7]) / 10;
+    document.getElementById('garage').innerHTML = (result_temp[2] * 256 + result_temp[3]) / 10;
+    document.getElementById('couloir').innerHTML = (result_temp[2] * 256 + result_temp[3]) / 10;
+}
+
+
+var varTest = 0;
+
+function getData() {
+    varTest = varTest + 1;
+    return varTest;
+}
+Plotly.plot('chart', [{
+        y: [(result_temp[0] * 256 + result_temp[1]) / 10],
+        type: 'line',
+        name: 'Salon'
+    },
+    {
+        y: [(result_temp[2] * 256 + result_temp[3]) / 10],
+        type: 'line',
+        name: 'Chambre1'
+    },
+    {
+        y: [(result_temp[2] * 256 + result_temp[3]) / 10],
+        type: 'line',
+        name: 'Chambre2'
+    },
+    {
+        y: [(result_temp[2] * 256 + result_temp[3]) / 10],
+        type: 'line',
+        name: 'Chambre3'
+    },
+    {
+        y: [(result_temp[4] * 256 + result_temp[5]) / 10],
+        type: 'line',
+        name: 'cuisine'
+    },
+    {
+        y: [(result_temp[6] * 256 + result_temp[7]) / 10],
+        type: 'line',
+        name: 'salle de bains 1'
+    },
+    {
+        y: [(result_temp[6] * 256 + result_temp[7]) / 10],
+        type: 'line',
+        name: 'salle de bains 2'
+    },
+    {
+        y: [(result_temp[0] * 256 + result_temp[1]) / 10],
+        type: 'line',
+        name: 'garage'
+    },
+    {
+        y: [(result_temp[4] * 256 + result_temp[5]) / 10],
+        type: 'line',
+        name: 'couloir'
+    }
+]);
+var cnt = 0;
+setInterval(function() {
+    Plotly.extendTraces('chart', {
+        y: [
+            [(result_temp[0] * 256 + result_temp[1]) / 10]
+        ]
+    }, [0]);
+    Plotly.extendTraces('chart', {
+        y: [
+            [(result_temp[2] * 256 + result_temp[3]) / 10]
+        ]
+    }, [1]);
+    Plotly.extendTraces('chart', {
+        y: [
+            [(result_temp[2] * 256 + result_temp[3]) / 10]
+        ]
+    }, [2]);
+    Plotly.extendTraces('chart', {
+        y: [
+            [(result_temp[2] * 256 + result_temp[3]) / 10]
+        ]
+    }, [3]);
+    Plotly.extendTraces('chart', {
+        y: [
+            [(result_temp[4] * 256 + result_temp[5]) / 10]
+        ]
+    }, [4]);
+    Plotly.extendTraces('chart', {
+        y: [
+            [(result_temp[6] * 256 + result_temp[7]) / 10]
+        ]
+    }, [5]);
+    Plotly.extendTraces('chart', {
+        y: [
+            [(result_temp[6] * 256 + result_temp[7]) / 10]
+        ]
+    }, [6]);
+    Plotly.extendTraces('chart', {
+        y: [
+            [(result_temp[0] * 256 + result_temp[1]) / 10]
+        ]
+    }, [7]);
+    Plotly.extendTraces('chart', {
+        y: [
+            [(result_temp[4] * 256 + result_temp[5]) / 10]
+        ]
+    }, [8]);
+    cnt++;
+    if (cnt > 200) {
+        Plotly.relayout('chart', {
+            xaxis: {
+                range: [cnt - 200, cnt]
             }
         });
     }
-
-    function getTime() {
-        jQuery.ajax({
-            type: "POST",
-            url: 'utils/modbus.php',
-            dataType: 'json',
-            data: {
-                functionname: 'getTime',
-                arguments: 0
-            },
-
-            success: function(obj, textstatus) {
-                if (!('error' in obj)) {
-                    result_time = obj.result;
-                    console.log(result_time);
-                } else {
-                    console.log(obj.error);
-                }
-            }
-        });
-    }
-
-    function updateNameDisplay() {
-        document.getElementById('livingroom').innerHTML = result_temp[1] / 10;
-        document.getElementById('bedroom1').innerHTML = result_temp[3] / 10;
-        document.getElementById('bedroom2').innerHTML = result_temp[3] / 10;
-        document.getElementById('bedroom3').innerHTML = result_temp[3] / 10;
-        document.getElementById('cuisine').innerHTML = result_temp[5] / 10;
-        document.getElementById('bathroom1').innerHTML = result_temp[7] / 10;
-        document.getElementById('bathroom2').innerHTML = result_temp[7] / 10;
-        document.getElementById('garage').innerHTML = result_temp[1] / 10;
-        document.getElementById('couloir').innerHTML = result_temp[5] / 10;
-    }
-
-
-    var varTest = 0;
-
-    function getData() {
-        varTest = varTest + 1;
-        return varTest;
-    }
-    Plotly.plot('chart', [{
-            y: [result_temp[1] / 10],
-            type: 'line',
-            name: 'Salon'
-        },
-        {
-            y: [result_temp[3] / 10],
-            type: 'line',
-            name: 'Chambre1'
-        },
-        {
-            y: [result_temp[3] / 10],
-            type: 'line',
-            name: 'Chambre2'
-        },
-        {
-            y: [result_temp[3] / 10],
-            type: 'line',
-            name: 'Chambre3'
-        },
-        {
-            y: [result_temp[5] / 10],
-            type: 'line',
-            name: 'cuisine'
-        },
-        {
-            y: [result_temp[7] / 10],
-            type: 'line',
-            name: 'salle de bains 1'
-        },
-        {
-            y: [result_temp[7] / 10],
-            type: 'line',
-            name: 'salle de bains 2'
-        },
-        {
-            y: [result_temp[1] / 10],
-            type: 'line',
-            name: 'garage'
-        },
-        {
-            y: [result_temp[5] / 10],
-            type: 'line',
-            name: 'couloir'
-        }
-    ]);
-    var cnt = 0;
-    setInterval(function() {
-        Plotly.extendTraces('chart', {
-            y: [
-                [result_temp[1] / 10]
-            ]
-        }, [0]);
-        Plotly.extendTraces('chart', {
-            y: [
-                [result_temp[3] / 10]
-            ]
-        }, [1]);
-        Plotly.extendTraces('chart', {
-            y: [
-                [result_temp[3] / 10]
-            ]
-        }, [2]);
-        Plotly.extendTraces('chart', {
-            y: [
-                [result_temp[3] / 10]
-            ]
-        }, [3]);
-        Plotly.extendTraces('chart', {
-            y: [
-                [result_temp[5] / 10]
-            ]
-        }, [4]);
-        Plotly.extendTraces('chart', {
-            y: [
-                [result_temp[7] / 10]
-            ]
-        }, [5]);
-        Plotly.extendTraces('chart', {
-            y: [
-                [result_temp[7] / 10]
-            ]
-        }, [6]);
-        Plotly.extendTraces('chart', {
-            y: [
-                [result_temp[1] / 10]
-            ]
-        }, [7]);
-        Plotly.extendTraces('chart', {
-            y: [
-                [result_temp[5] / 10]
-            ]
-        }, [8]);
-        cnt++;
-        if (cnt > 200) {
-            Plotly.relayout('chart', {
-                xaxis: {
-                    range: [cnt - 200, cnt]
-                }
-            });
-        }
-    }, 50);
+}, 50);
 </script>

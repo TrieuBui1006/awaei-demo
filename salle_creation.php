@@ -46,7 +46,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
             <section class="signup">
                 <form method="post" action="salle_creation_controller.php">
                     <div class="container">
-                        <h1>Create une salle</h1>
+                        <h1>Creation de salle</h1>
                         <p>Veuillez remplir ce formulaire pour créer une salle.</p>
 
                         <label for="nom_salle"><b>Nom de Salle <span style="color: red;">*</span></b></label>
@@ -93,7 +93,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
                         </div>
 
                         <div class="clearfix">
-                            <button type="submit">Submit</button>
+                            <button type="submit">Enregistrer</button>
                         </div>
                     </div>
                 </form>

@@ -47,7 +47,10 @@ session_start();
 
         </div>
 
-        <button onclick="writeBit()">Write Bit</button>
+        <button onclick="turnOn()">turn on Vent</button>
+        <button onclick="turnOffVent()">turn off Vent</button>
+        <button onclick="turnOnRad()">turn on Radiateur</button>
+        <button onclick="turnOffRad()">turn off Radiateur</button>
 
         <div class="flexBoxTemp">
             <div class="childBox">
@@ -110,66 +113,47 @@ session_start();
 // setInterval(getTime, 1000);
 // setInterval(updateNameDisplay, 1000);
 
-var result_temp = 0;
-var result_time = 0;
-var write_result = 0;
+// var result_temp = 0;
+// var result_time = 0;
+// var write_result = 0;
 
-function getTemp() {
+function turnOn() {
     jQuery.ajax({
         type: "POST",
         url: 'utils/modbus.php',
         dataType: 'json',
         data: {
-            functionname: 'getTemp',
-            arguments: 0
-        },
-
-        success: function(obj, textstatus) {
-            if (!('error' in obj)) {
-                result_temp = obj.result;
-                console.log(obj);
-            } else {
-                console.log(obj.error);
-            }
-        }
-    });
-}
-
-function getTime() {
-    jQuery.ajax({
-        type: "POST",
-        url: 'utils/modbus.php',
-        dataType: 'json',
-        data: {
-            functionname: 'getTime',
-            arguments: 0
-        },
-
-        success: function(obj, textstatus) {
-            if (!('error' in obj)) {
-                result_time = obj.result;
-                console.log(result_time);
-            } else {
-                console.log(obj.error);
-            }
-        }
-    });
-}
-
-function writeBit() {
-    jQuery.ajax({
-        type: "POST",
-        url: 'utils/modbus.php',
-        dataType: 'json',
-        data: {
-            functionname: 'writeBit',
+            functionname: 'turnOn',
             arguments: 0
         },
 
         success: function(obj, textstatus) {
             if (!('error' in obj)) {
                 write_result = obj.result;
-                console.log(write_result);
+                console.log("Turn On Ventialeur");
+            } else {
+                console.log(obj.error);
+            }
+        }
+    });
+
+    console.log("Turn On Ventialeur");
+}
+
+function turnOffVent() {
+    jQuery.ajax({
+        type: "POST",
+        url: 'utils/modbus.php',
+        dataType: 'json',
+        data: {
+            functionname: 'turnOffVent',
+            arguments: 0
+        },
+
+        success: function(obj, textstatus) {
+            if (!('error' in obj)) {
+                write_result = obj.result;
+                console.log("Turn Off Ventialeur");
             } else {
                 console.log(obj.error);
             }
@@ -178,6 +162,94 @@ function writeBit() {
 
     console.log("Button actived");
 }
+
+function turnOnRad() {
+    jQuery.ajax({
+        type: "POST",
+        url: 'utils/modbus.php',
+        dataType: 'json',
+        data: {
+            functionname: 'turnOnRad',
+            arguments: 0
+        },
+
+        success: function(obj, textstatus) {
+            if (!('error' in obj)) {
+                write_result = obj.result;
+                console.log("Turn On Radiateur");
+            } else {
+                console.log(obj.error);
+            }
+        }
+    });
+
+    console.log("Button actived");
+}
+
+function turnOffRad() {
+    jQuery.ajax({
+        type: "POST",
+        url: 'utils/modbus.php',
+        dataType: 'json',
+        data: {
+            functionname: 'turnOffRad',
+            arguments: 0
+        },
+
+        success: function(obj, textstatus) {
+            if (!('error' in obj)) {
+                write_result = obj.result;
+                console.log("Turn Off Radiateur");
+            } else {
+                console.log(obj.error);
+            }
+        }
+    });
+
+    console.log("Button actived");
+}
+
+// function getTemp() {
+//     jQuery.ajax({
+//         type: "POST",
+//         url: 'utils/modbus.php',
+//         dataType: 'json',
+//         data: {
+//             functionname: 'getTemp',
+//             arguments: 0
+//         },
+
+//         success: function(obj, textstatus) {
+//             if (!('error' in obj)) {
+//                 result_temp = obj.result;
+//                 console.log(obj);
+//             } else {
+//                 console.log(obj.error);
+//             }
+//         }
+//     });
+// }
+
+// function getTime() {
+//     jQuery.ajax({
+//         type: "POST",
+//         url: 'utils/modbus.php',
+//         dataType: 'json',
+//         data: {
+//             functionname: 'getTime',
+//             arguments: 0
+//         },
+
+//         success: function(obj, textstatus) {
+//             if (!('error' in obj)) {
+//                 result_time = obj.result;
+//                 console.log(result_time);
+//             } else {
+//                 console.log(obj.error);
+//             }
+//         }
+//     });
+// }
 
 // function updateNameDisplay() {
 //     document.getElementById('livingroom').innerHTML = result_temp[1] / 10;
