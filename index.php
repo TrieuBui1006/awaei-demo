@@ -15,7 +15,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <!--LogoPage-->
     <link rel="icon" type="image/png" href="img/logo/logo2.png" />
 
-    <link rel="stylesheet" href="css/stylee.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>VIETSAF - Accueil</title>
 </head>
 
@@ -27,12 +27,12 @@ if (!isset($_SESSION['id_utilisateur'])) {
     ?>
     <!--------------------------------- HEADER - END ------------------------------------>
 
-    <!-------------------------------- banner ------------------------------------------->
+    <!--- banner--->
     <section class="banner">
         <video src='./video/SmartHome.mp4' autoPlay loop muted ></video>
         <div class="content">
             <div class="intro">
-                <h1>Bienvenue <br />Nous sommes <span>VIETSAF</span></h1>
+                <h2>Bienvenue <br />Nous sommes <span>VIETSAF</span></h2>
                 <div class="animate-text">
                     <span style="--i: 1">S</span>
                     <span style="--i: 2">M</span>
@@ -65,49 +65,93 @@ if (!isset($_SESSION['id_utilisateur'])) {
             <?php endif; ?>
         </div>
     </section>
-    <!-------------------------------- banner ------------------------------------------->
+    <!--- banner --->
 
-    <!-------------------------------- introduction ------------------------------------->
+    <!--- introduction --->
     <section class="introduction">
-        <h1>Introduction</h1>
-        <div class="background-intro">
-            <img src="img/intro/intro1.jpg" alt="image1" />
+        <h1 class="header-intro">Overview</h1>
+        <div class="body-intro">
+            Welcome to SmartThings. Choose the right temperature. The right mood. Even the right wash cycle. All from right here.
         </div>
-        <div class="content-intro">
-            <div class="box-intro">
-                <img src="img/intro/intro2.jpg" alt="img2" />
-                <div class="description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur nostrum numquam voluptatem debitis odit nisi, cum sit
-                    ipsa consequuntur minus eius doloribus obcaecati corporis
-                    exercitationem deserunt suscipit quis veritatis aspernatur.
+        <a href="info.php" class="button-intro">Contact</a>
+    </section>
+    <!--- introduction --->
+
+    <!--- present --->
+    <section class="present">
+        <h1>Qui sommes nous?</h1>
+        <div class="content-present">
+            <div class="box-present">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus animi fuga odit deleniti ex.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos debitis aliquam quidem libero mollitia nemo?
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eaque dolore cumque assumenda, qui nulla.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quis asperiores nulla commodi, esse aspernatur.
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga assumenda sunt modi beatae quae iure?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aspernatur nihil tenetur. Sapiente, dignissimos earum.
+                </p>
+            </div>
+            <div class="box-present">
+                <img src="./img/intro/wifi.png" alt="present-img">
+            </div>
+        </div>
+    </section>
+    <!--- present --->
+
+    <!--- service --->
+    <section class="service">
+        <h1>Service</h1>
+        <div class="content-service">
+            <div class="box-service">
+                <div class="box-service-img">
+                    <img src="./img/intro/wifi.png" alt="box-service-img">
+                </div>
+                <div class="box-service-content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis distinctio maiores ut necessitatibus illo eos.
                 </div>
             </div>
-            <div class="box-intro">
-                <img src="img/intro/intro3.jpg" alt="img3" />
-                <div class="description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur nostrum numquam voluptatem debitis odit nisi, cum sit
-                    ipsa consequuntur minus eius doloribus obcaecati corporis
-                    exercitationem deserunt suscipit quis veritatis aspernatur.
+            <div class="box-service">
+                <div class="box-service-img">
+                    <img src="./img/intro/wifi.png" alt="box-service-img">
+                </div>
+                <div class="box-service-content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis distinctio maiores ut necessitatibus illo eos.
                 </div>
             </div>
-            <div class="box-intro">
-                <img src="img/intro/intro4.jpg" alt="img4" />
-                <div class="description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Consequatur nostrum numquam voluptatem debitis odit nisi, cum sit
-                    ipsa consequuntur minus eius doloribus obcaecati corporis
-                    exercitationem deserunt suscipit quis veritatis aspernatur.
+            <div class="box-service">
+                <div class="box-service-img">
+                    <img src="./img/intro/wifi.png" alt="box-service-img">
+                </div>
+                <div class="box-service-content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis distinctio maiores ut necessitatibus illo eos.
                 </div>
             </div>
         </div>
     </section>
-    <!-------------------------------- introduction ------------------------------------->
+    <!--- service --->
 
-    <!--------------------------------- review ------------------------------------------>
+    <!--- newsletter --->
+    <section class="newsletter">
+        <div class="content-news">
+            <h2>Recevoir la newsletter</h2>
+            <p>Revevez une fois par mois (maximum) l'actualité de Vietsaf</p>
+        </div>
+        <div class="box-news">
+            <input type="email" name="email" required="required" >
+            <button>GO !</button>
+        </div>
+    </section>
+    <!--- newsletter --->
+
+    <!--- review --->
     <section class="review">
-        <h2>Review</h2>
+        <h1>Review</h1>
         <i class="fas fa-quote-left review-comment"></i>
         <div id="slider">
             <input type="radio" name="slider" id="slide1" checked>
@@ -119,7 +163,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
                     <div class="inner">
                         <div class="slide slide_1">
                         <div class="slide-content">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, eius? Consequuntur cumque quo alias excepturi quia adipisci porro facilis eaque, corporis, natus culpa animi, nihil aliquid cupiditate inventore amet? Perspiciatis.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ladipisci porro facilis eaque, corporis, natus culpa animi, nihil aliquid cupiditate inventore amet? Perspiciatis.</p>
                         </div>
                         </div>
                         <div class="slide slide_2">
@@ -154,13 +198,29 @@ if (!isset($_SESSION['id_utilisateur'])) {
             </div>
         </div>
     </section>
-    <!--------------------------------- review ------------------------------------------>
+    <!--- review--->
 
-    <!--------------------------------- footer ------------------------------------------>
+    <!--- collaborateur --->
+    <section class="collaborateur">
+        <h1>Collaborateurs</h1>
+        <div class="content-colla">
+            <img src="./img/intro/wifi.png" alt="collaboration">
+            <img src="./img/intro/wifi.png" alt="collaboration">
+            <img src="./img/intro/wifi.png" alt="collaboration">
+            <img src="./img/intro/wifi.png" alt="collaboration">
+            <img src="./img/intro/wifi.png" alt="collaboration">
+            <img src="./img/intro/wifi.png" alt="collaboration">
+            <img src="./img/intro/wifi.png" alt="collaboration">
+            <img src="./img/intro/wifi.png" alt="collaboration">
+        </div>
+    </section>
+    <!--- collaborateur --->
+
+    <!--- footer --->
     <?php
     require_once('utils/footer.php');
     ?>
-    <!--------------------------------- footer ------------------------------------------>
+    <!--- footer --->
 
 </body>
 

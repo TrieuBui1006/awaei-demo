@@ -26,70 +26,110 @@ if (!isset($_SESSION['id_utilisateur'])) {
     ?>
     <!--------------------------------- HEADER - END ------------------------------------>
 
-    <section class="organi">
-        <!--intro-project-->
-        <div class="organi-box">
-            <h2>Our Project</h2>
-            <div class="box-content">
-                <img src="img/logo.jpg" alt="project" />
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                    eaque, iste quisquam iusto reiciendis ab reprehenderit illum
-                    dolorum? Similique aperiam quam, neque vel explicabo, soluta
-                    obcaecati quos fugiat nihil nostrum possimus expedita!
-                </div>
+    <!--banner-organization-->
+    <section class="banner-organization">
+        <div class="banner"></div>
+        <h2>Equipe & Partenaires</h2>
+    </section>
+
+    <!--intro-project-->
+    <!-- Dung lai present cua accueil -->
+    <section class="present">
+        <h1>Découvrez notre projet</h1>
+        <div class="content-present">
+            <div class="box-present">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus animi fuga odit deleniti ex.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos debitis aliquam quidem libero mollitia nemo?
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eaque dolore cumque assumenda, qui nulla.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quis asperiores nulla commodi, esse aspernatur.
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga assumenda sunt modi beatae quae iure?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aspernatur nihil tenetur. Sapiente, dignissimos earum.
+                </p>
+            </div>
+            <div class="box-present">
+                <img src="./img/intro/wifi.png" alt="present-img">
             </div>
         </div>
-        <!--intro-tutor-->
-        <div class="organi-box">
-            <h2>Our Tutor</h2>
-            <div class="box-content">
-                <img src="img/logo.jpg" alt="tutor" />
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                    eaque, iste quisquam iusto reiciendis ab reprehenderit illum
-                    dolorum? Similique aperiam quam, neque vel explicabo, soluta
-                    obcaecati quos fugiat nihil nostrum possimus expedita!
-                </div>
+    </section>
+
+    <!--intro-tutor-->
+    <!-- Dung lai present cua accueil -->
+    <section class="present">
+        <h1>Notre Tuteur</h1>
+        <div class="content-present">
+            <div class="box-present">
+                <img src="./img/intro/wifi.png" alt="present-img">
+            </div>
+            <div class="box-present">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus animi fuga odit deleniti ex.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos debitis aliquam quidem libero mollitia nemo?
+                </p>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eaque dolore cumque assumenda, qui nulla.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quis asperiores nulla commodi, esse aspernatur.
+                </p>
+                <br>
             </div>
         </div>
-        <!--intro-groupe-->
-        <div class="organi-box">
-            <h2>Our Team</h2>
-            <div class="box-content">
-                <div class="element-1">
-                    <img src="img/maison.jpg" alt="image1" />
-                    <div class="ele-content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                        quidem provident ratione consequatur, quos suscipit.
-                    </div>
+    </section>
+
+    <!--intro-equipe-->
+    <section class="equipe-organization">
+        <h1>Notre Équipe</h1>
+        <div class="content-equipe-organization">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus animi fuga odit deleniti ex.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos debitis aliquam quidem libero mollitia nemo?
+        </div>
+        <div class="members-equipe-organization">
+            <div class="content-member">
+                <p>BUI Duc Trieu</p>
+                <span>Directeur</span>
+                <div class="img-member">
+                    <img src="./img/intro/intro1.jpg" alt="TrieuBui">
+                </div>  
+            </div>
+            <div class="content-member">
+                <p>BUI Duc Trieu</p>
+                <span>Directeur</span>
+                <div class="img-member">
+                    <img src="./img/intro/intro1.jpg" alt="TrieuBui">
                 </div>
-                <div class="element-2">
-                    <div class="small-ele">
-                        <img src="img/maison.jpg" alt="sele1" />
-                        <div class="s-ele-content">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-                            repudiandae, quae dolores vero nostrum quibusdam.
-                        </div>
-                    </div>
-                    <div class="small-ele">
-                        <img src="img/maison.jpg" alt="sele1" />
-                        <div class="s-ele-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                            velit molestias sint, minus atque in.
-                        </div>
-                    </div>
-                    <div class="small-ele">
-                        <img src="img/maison.jpg" alt="sele1" />
-                        <div class="s-ele-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Doloribus perspiciatis, nemo eligendi libero nihil obcaecati!
-                        </div>
-                    </div>
+            </div>
+            <div class="content-member">
+                <p>BUI Duc Trieu</p>
+                <span>Directeur</span>
+                <div class="img-member">
+                    <img src="./img/intro/intro1.jpg" alt="TrieuBui">
+                </div>
+            </div>
+            <div class="content-member">
+                <p>BUI Duc Trieu</p>
+                <span>Directeur</span>
+                <div class="img-member">
+                    <img src="./img/intro/intro1.jpg" alt="TrieuBui">
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="cooperation">
+        <div class="banner1"></div>
+        <div class="banner2"></div>
+        <div class="banner3"></div>
+        <div class="banner4"></div>
+        <div class="banner5"></div>
+        <h2>Coopérer avec nous</h2>
+    </section>
+
     <!--footer-->
     <?php
     require_once('utils/footer.php');

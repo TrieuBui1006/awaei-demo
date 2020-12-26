@@ -22,7 +22,7 @@
                     <a href="organigramme.php"><span class="link-text">Organigramme</span></a>
                 </li>
                 <li>
-                    <a href="info.php"><span class="link-text">Info</span></a>
+                    <a href="info.php"><span class="link-text">Infomation</span></a>
                 </li>
 
                 <?php if ($_SESSION['id_utilisateur'] == false) : ?>
@@ -59,7 +59,7 @@
         <ul>
             <li><a href="index.php" class="nav-link">Accueil</a></li>
             <li><a href="organigramme.php" class="nav-link">Organigramme</a></li>
-            <li><a href="info.php" class="nav-link">Info</a></li>
+            <li><a href="info.php" class="nav-link">Infomation</a></li>
 
             <?php if ($_SESSION['id_utilisateur'] == false) : ?>
             <li><a href="seConnecter.php" class="nav-link">Se connecter</a></li>

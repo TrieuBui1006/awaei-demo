@@ -30,7 +30,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <section id="wrapper-signin">
         <div class="formBx">
             <form name="login-form" class="login-form" action="seConnecter_controller.php" method="post">
-                <h1>SE CONNECTER</h1>
+                <h2>SE CONNECTER</h2>
 
                 <div class="content-login">
                     <div class="inputBox">
