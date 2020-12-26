@@ -19,25 +19,25 @@ $role_utilisateur = 0;
 if ($resultat) {
 	// Il y a donc une erreur
 	$error_pseudo = TRUE;
-	header('Location: sinscrire.php?error_emailDuplicate=' . $error_emailDuplicate);
+	header('Location: admin_client_creation.php?error_emailDuplicate=' . $error_emailDuplicate);
 }
 // On regarde si le mot de passe est conforme au format attendu
 else if (!preg_match("#^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$#", $_POST['motDePasse'])) {
 	// Le mot de passe n'est pas conforme donc il y a une erreur
 	$error_motDePasse_conditions = TRUE;
-	header('Location: sinscrire.php?error_motDePasse_conditions=' . $error_motDePasse_conditions);
+	header('Location: admin_client_creation.php?error_motDePasse_conditions=' . $error_motDePasse_conditions);
 }
 // On regarde si le téléphone est conforme au format attendu
 else if (!preg_match("#^0[1-8]([-. ]?[0-9]{2}){4}$#", $_POST['telephone'])) {
 	// Le téléphone n'est pas conforme donc il y a une erreur
 	$error_telephone = TRUE;
-	header('Location: sinscrire.php?error_telephone=' . $error_telephone);
+	header('Location: admin_client_creation.php?error_telephone=' . $error_telephone);
 }
 // On regarde si l'adresse mail est conforme au format attendu
 else if (!preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $_POST['email'])) {
 	// L'adresse mail n'est pas conforme donc il y a une erreur
 	$error_emailWorng = TRUE;
-	header('Location: sinscrire.php?error_emailWorng=' . $error_emailWorng);
+	header('Location: admin_client_creation.php?error_emailWorng=' . $error_emailWorng);
 }
 // Jusque-là tout est conforme
 else {
@@ -56,12 +56,12 @@ else {
 		session_start();
 		$_SESSION['id_utilisateur'] = $resultat['id_utilisateur'];
 		$_SESSION['role_utilisateur'] = $resultat['role_utilisateur'];
-		header('Location: index.php');
+		header('Location: page_homepage.php');
 	}
 	// Les deux mot de passe sont différents
 	else {
 		// Il y a donc une erreur
 		$error_password = TRUE;
-		header('Location: sinscrire.php?error_motDePasse=' . $error_motDePasse);
+		header('Location: admin_client_creation.php?error_motDePasse=' . $error_motDePasse);
 	}
 }

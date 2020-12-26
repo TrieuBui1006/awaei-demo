@@ -17,7 +17,7 @@ if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/58cdc139df.js" crossorigin="anonymous"></script>
     <!--LogoPage-->
-    <link rel="icon" type="image/png" href="../img/logo.jpg" />
+    <link rel="icon" type="image/png" href="img/logo/logo2.png" />
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="./node_modules/plotly.js-dist/plotly.js"></script>

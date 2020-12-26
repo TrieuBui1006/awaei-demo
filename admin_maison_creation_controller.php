@@ -19,7 +19,7 @@ $couloir = 0;
 if ($resultat) {
     // Il y a donc une erreur
     $error_nom_maison = TRUE;
-    header('Location: maison_creation.php?error_nom_maison=' . $error_nom_maison);
+    header('Location: admin_maison_creation.php?error_nom_maison=' . $error_nom_maison);
 } else {
     if ($_POST['salon']) {
         $salon = 1;
@@ -37,5 +37,5 @@ if ($resultat) {
     $req = $bdd->prepare('INSERT INTO maisons (nom_maison, salon, nb_chambre, cuisine, nb_sdb, garage, couloir) VALUES(?, ?, ?, ?, ?, ?, ?)');
     $req->execute(array($_POST['nom_maison'], $salon, $_POST['nb_chambre'], $cuisine, $_POST['nb_sdb'], $garage, $couloir));
 
-    header('Location: maison_creation.php');
+    header('Location: admin_maison_creation.php');
 }

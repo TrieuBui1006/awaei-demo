@@ -713,12 +713,12 @@ footer .sec.contact .info li a:hover{
   background: rgb(57, 62, 70, 0.3);
 }
 
-.nav-item-compte #chambre {
+.nav-item-compte #chambre, .nav-item-compte #SdB {
   display: none;
   transition: 0.1s;
 }
 
-.nav-link-compte i.arrow {
+.nav-link-compte i.arrow-chambre {
   position: absolute;
   top: 133px;
   left: 215px;
@@ -735,6 +735,7 @@ footer .sec.contact .info li a:hover{
   font-size: 1.3rem;
   margin-left: 1rem;
 
+  cursor: pointer;
   transition: 0.1s;
 }
 
@@ -794,11 +795,11 @@ footer .sec.contact .info li a:hover{
   font-size: 1.2rem;
 }
 
-.nav-item-compte #chambre:checked ~ .submenu > li {
+.nav-item-compte #chambre:checked ~ .submenu > li, .nav-item-compte #SbB:checked ~ .submenu > li {
   display: flex;
 }
 
-.nav-item-compte #chambre:checked ~ .nav-link-compte i.arrow {
+.nav-item-compte #chambre:checked ~ .nav-link-compte i.arrow-chambre {
   transform: rotate(90deg);
 }
 
@@ -827,7 +828,7 @@ footer .sec.contact .info li a:hover{
 }
 
 @media only screen and (max-width: 900px) {
-  .nav-link-compte i.arrow {
+  .nav-link-compte i.arrow-chambre {
     top: 133px;
     left: 85px;
   }
@@ -880,13 +881,7 @@ footer .sec.contact .info li a:hover{
     justify-content: flex-start;
   }
 
-  .mon-compte
-    #check-compte:checked
-    ~ .navbar-compte
-    ul
-    li
-    a.nav-link-compte
-    i.arrow {
+  .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte i.arrow-chambre {
     top: 133px;
     left: 170px;
   }
@@ -907,7 +902,7 @@ footer .sec.contact .info li a:hover{
 }
 
 @media only screen and (max-width: 500px) {
-  .nav-link-compte i.arrow {
+  .nav-link-compte i.arrow-chambre {
     top: 133px;
     left: 55px;
   }
@@ -948,13 +943,7 @@ footer .sec.contact .info li a:hover{
     justify-content: flex-start;
   }
 
-  .mon-compte
-    #check-compte:checked
-    ~ .navbar-compte
-    ul
-    li
-    a.nav-link-compte
-    i.arrow {
+  .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte i.arrow-chambre {
     top: 133px;
     left: 170px;
   }
@@ -973,13 +962,7 @@ footer .sec.contact .info li a:hover{
     width: 100%;
   }
 
-  .mon-compte
-    #check-compte:checked
-    ~ .navbar-compte
-    ul
-    li
-    a.nav-link-compte
-    i.arrow {
+  .mon-compte #check-compte:checked ~ .navbar-compte ul li a.nav-link-compte i.arrow-chambre {
     top: 133px;
     left: 290px;
   }
@@ -1257,7 +1240,7 @@ section.service{
   padding: 10px 10px;
   margin: 10px;
 
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 2px;
 
   transition: all 0.5s;
@@ -1676,7 +1659,7 @@ section.equipe-organization{
   align-items: center;
   width: 300px;
 
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 2px;
   padding: 10px;
   margin: 0 auto;
@@ -2585,13 +2568,13 @@ section .mon-compte {
 
 section.mon-compte main div.wrapper{
   width: 100%;
-  height: 450px;
+  height: 400px;
 }
 
 .flexBoxTemp{
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: center;
   align-items: center;
   grid-gap: 20px;
@@ -2599,9 +2582,9 @@ section.mon-compte main div.wrapper{
 
 .flexBoxTemp .childBox{
   position: relative;
-  width: 200px;
-  height: 200px;
-  border: 1px solid #ccc;
+  width: 250px;
+  height: 250px;
+  border: 2px solid #ccc;
   margin: 0 auto;
 
   display: flex;

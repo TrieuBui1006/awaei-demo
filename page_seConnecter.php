@@ -13,7 +13,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/58cdc139df.js" crossorigin="anonymous"></script>
     <!--LogoPage-->
-    <link rel="icon" type="image/png" href="../img/logo.jpg" />
+    <link rel="icon" type="image/png" href="img/logo/logo2.png" />
 
     <link rel="stylesheet" href="css/style.css" />
     <title>Les Viets - Se Connecter</title>
@@ -45,7 +45,6 @@ if (!isset($_SESSION['id_utilisateur'])) {
                 </div>
                 <div class="button-login">
                     <button class="submit-btn" type="submit">Se Connecter</button>
-                    <a href="sinscrire.php">S'inscrire</a>
                 </div>
                 <!-- Si la connexion n'a pas fonctionné -->
                 <?php

@@ -51,16 +51,16 @@ if (!isset($_SESSION['id_utilisateur'])) {
             <div class="signinup">
                 <?php if ($_SESSION['id_utilisateur'] == false) : ?>
                 <div>
-                    <a href="seConnecter.php">Sign In</a>
+                    <a href="page_seConnecter.php">Sign In</a>
                 </div>
                 <div>
-                    <a href="info.php">Contact</a>
+                    <a href="page_infomation.php">Contact</a>
                 </div>
             </div>
             <?php endif; ?>
             <?php if ($_SESSION['id_utilisateur'] == true) : ?>
             <div>
-                <a href="monCompte.php">Connecter</a>
+                <a href="page_monCompte.php">Mon Compte</a>
             </div>
             <?php endif; ?>
         </div>
@@ -73,7 +73,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
         <div class="body-intro">
             Welcome to SmartThings. Choose the right temperature. The right mood. Even the right wash cycle. All from right here.
         </div>
-        <a href="info.php" class="button-intro">Contact</a>
+        <a href="page_infomation.php" class="button-intro">Contact</a>
     </section>
     <!--- introduction --->
 

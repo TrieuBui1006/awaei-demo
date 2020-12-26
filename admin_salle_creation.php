@@ -2,10 +2,10 @@
 session_start();
 if (!isset($_SESSION['id_utilisateur'])) {
     $_SESSION['id_utilisateur'] = false;
-    header('Location: index.php');
+    header('Location: page_homepage.php');
 }
 if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
-    header('Location: index.php');
+    header('Location: page_homepage.php');
 }
 ?>
 

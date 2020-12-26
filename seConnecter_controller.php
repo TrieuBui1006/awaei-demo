@@ -19,7 +19,7 @@ else {
 // Le pseudo n'a pas été trouvé dans la BDD
 if (!$resultat) {
     $error = TRUE;
-    header('Location: seConnecter.php?error=' . $error);
+    header('Location: page_seConnecter.php?error=' . $error);
 }
 // Le pseudo existe dans la BDD
 else {
@@ -29,7 +29,7 @@ else {
             session_start();
             $_SESSION['id_utilisateur'] = $resultat['id_utilisateur'];
             $_SESSION['role_utilisateur'] = $resultat['role_utilisateur'];
-            header('Location: monCompte.php');
+            header('Location: page_monCompte.php');
         }
         if ($resultat['role_utilisateur'] == 1) {
             session_start();
@@ -41,6 +41,6 @@ else {
     // Le mot de passe n'est pas le bon
     else {
         $error = TRUE;
-        header('Location: seConnecter.php?error=' . $error);
+        header('Location: page_seConnecter.php?error=' . $error);
     }
 }

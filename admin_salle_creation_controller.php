@@ -20,7 +20,7 @@ $eauChaude = 0;
 if ($resultat) {
     // Il y a donc une erreur
     $error_nom_salle = TRUE;
-    header('Location: salle_creation.php?error_nom_salle=' . $error_nom_salle);
+    header('Location: admin_salle_creation.php?error_nom_salle=' . $error_nom_salle);
 } else {
     if ($_POST['tempSalle']) {
         $tempSalle = 1;
@@ -41,5 +41,5 @@ if ($resultat) {
     $req = $bdd->prepare('INSERT INTO salles (nom_salle, tempSalle, tempEau, lumiere, radiateur, eauChaude) VALUES(?, ?, ?, ?, ?, ?)');
     $req->execute(array($_POST['nom_salle'], $tempSalle, $tempEau, $lumiere, $radiateur, $eauChaude));
 
-    header('Location: salle_creation.php');
+    header('Location: admin_salle_creation.php');
 }
