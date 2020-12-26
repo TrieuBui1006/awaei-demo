@@ -17,7 +17,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/58cdc139df.js" crossorigin="anonymous"></script>
     <!--LogoPage-->
-    <link rel="icon" type="image/png" href="../img/logo.jpg" />
+    <link rel="icon" type="image/png" href="img/logo/logo2.png" />
 
     <link rel="stylesheet" href="css/style.css" />
     <title>Les Viets - Salle Creation</title>
@@ -44,10 +44,10 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
 
         <main>
             <section class="signup">
-                <form method="post" action="salle_creation_controller.php">
+                <form method="post" action="admin_salle_creation_controller.php">
                     <div class="container">
-                        <h1>Creation de salle</h1>
-                        <p>Veuillez remplir ce formulaire pour créer une salle.</p>
+                        <h2>Creation de salle</h2>
+                        <p>Veuillez remplir ce formulaire pour créer une salle.<br>Comming soon !</p>
 
                         <label for="nom_salle"><b>Nom de Salle <span style="color: red;">*</span></b></label>
                         <input type="text" placeholder="Entrez Nom de Salle" name="nom_salle" required />
@@ -93,7 +93,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
                         </div>
 
                         <div class="clearfix">
-                            <button type="submit">Enregistrer</button>
+                            <button type="submit" disabled>Enregistrer</button>
                         </div>
                     </div>
                 </form>

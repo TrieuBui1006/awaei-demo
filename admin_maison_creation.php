@@ -17,7 +17,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/58cdc139df.js" crossorigin="anonymous"></script>
     <!--LogoPage-->
-    <link rel="icon" type="image/png" href="../img/logo.jpg" />
+    <link rel="icon" type="image/png" href="img/logo/logo2.png" />
 
     <link rel="stylesheet" href="css/style.css" />
     <title>Les Viets - Maison Creation</title>
@@ -44,13 +44,16 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
 
         <main>
             <section class="signup">
-                <form method="post" action="maison_creation_controller.php">
+                <form method="post" action="admin_maison_creation_controller.php">
                     <div class="container">
-                        <h1>Creation de maison</h1>
-                        <p>Veuillez remplir ce formulaire pour créer une maison.</p>
+                        <h2>Creation de maison</h2>
+                        <p>Veuillez remplir ce formulaire pour créer une maison.<br>Comming soon !</p>
 
                         <label for="nom_maison"><b>Nom de Maison <span style="color: red;">*</span></b></label>
                         <input type="text" placeholder="Entrez Nom de Maison" name="nom_maison" required />
+
+                        <label for="nb_chambre"><b>Nombre de Chambres <span style="color: red;">*</span></b></label>
+                        <input type="number" value="1" name="nb_chambre" required min="1" step="1" plac />
 
                         <div class="switch-content">
                             <label class="switch-titre" for="salon"><b>Salon:</b></label>
@@ -60,9 +63,6 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
                             </label>
                         </div>
 
-                        <label for="nb_chambre"><b>Nombre de Chambres <span style="color: red;">*</span></b></label>
-                        <input type="number" placeholder="Entrez Nombre de Chambres" name="nb_chambre" required />
-
                         <div class="switch-content">
                             <label class="switch-titre" for="cuisine"><b>Cuisine:</b></label>
                             <label class="switch">
@@ -71,8 +71,13 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
                             </label>
                         </div>
 
-                        <label for="nb_sdb"><b>Nombre de Salles de Bain <span style="color: red;">*</span></b></label>
-                        <input type="number" placeholder="Entrez Nombre de Salles de Bain" name="nb_sdb" required />
+                        <div class="switch-content">
+                            <label class="switch-titre" for="garage"><b>SdB:</b></label>
+                            <label class="switch">
+                                <input type="checkbox" name="garage">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
 
                         <div class="switch-content">
                             <label class="switch-titre" for="garage"><b>Garage:</b></label>
@@ -91,7 +96,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
                         </div>
 
                         <div class="clearfix">
-                            <button type="submit">Enregistrer</button>
+                            <button type="submit" disabled>Enregistrer</button>
                         </div>
                     </div>
                 </form>

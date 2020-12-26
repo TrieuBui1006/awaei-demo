@@ -4,7 +4,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
     $_SESSION['id_utilisateur'] = false;
     header('Location: index.php');
 }
-if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
+if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
     header('Location: index.php');
 }
 ?>
@@ -17,12 +17,10 @@ if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/58cdc139df.js" crossorigin="anonymous"></script>
     <!--LogoPage-->
-    <link rel="icon" type="image/png" href="../img/logo.jpg" />
+    <link rel="icon" type="image/png" href="img/logo/logo2.png" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <script src="./node_modules/plotly.js-dist/plotly.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Les Viets - Salon</title>
+    <title>Les Viets - ClientListe</title>
 </head>
 
 <body id="mainpage">
@@ -41,11 +39,14 @@ if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
         </label>
 
         <?php
-        require_once('utils/monCompteNavbar.php');
+        require_once('utils/adminNavbar.php');
         ?>
 
         <main>
-
+          <h1 style="margin: 20px 0">Client Liste</h1>
+          <p>
+                Comming soon !
+          </p>
         </main>
     </section>
 

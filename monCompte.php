@@ -20,7 +20,7 @@ if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
     <link rel="icon" type="image/png" href="../img/logo.jpg" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-moncompte.css">
+
     <script src="./node_modules/plotly.js-dist/plotly.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Les Viets - Info</title>
@@ -41,75 +41,60 @@ if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
             <i class="fas fa-bars toogle"></i>
         </label>
 
+        
         <?php
         require_once('utils/monCompteNavbar.php');
         ?>
 
-        <main>
+        <main class="compte">
+            <!--
             <div class="wrapper">
                 <div id="chart"></div>
             </div>
+            -->
             <div class="flexBoxTemp">
                 <div class="childBox">
                     <h3>Salon</h3>
-                    <div class="BoxContent" id='test'>
-                        <span id='livingroom'></span>
-                    </div>
+                    <span id='livingroom'>30C</span>
                 </div>
                 <div class="childBox">
                     <h3>Chambre 1</h3>
-                    <div class="BoxContent">
-                        <span id='bedroom1'></span>
-                    </div>
+                    <span id='bedroom1'>30C</span>
                 </div>
 
                 <div class="childBox">
                     <h3>Chambre 2</h3>
-                    <div class="BoxContent">
-                        <span id='bedroom2'></span>
-                    </div>
+                    <span id='bedroom2'></span>
                 </div>
 
                 <div class="childBox">
                     <h3>Chambre 3</h3>
-                    <div class="BoxContent">
-                        <span id='bedroom3'></span>
-                    </div>
+                    <span id='bedroom3'></span>
                 </div>
 
                 <div class="childBox">
                     <h3>Salle de bains 1</h3>
-                    <div class="BoxContent">
-                        <span id='bathroom1'></span>
-                    </div>
+                    <span id='bathroom1'></span>
                 </div>
 
                 <div class="childBox">
                     <h3>Salle de bains 2</h3>
-                    <div class="BoxContent">
-                        <span id='bathroom2'></span>
-                    </div>
+                    <span id='bathroom2'></span>
                 </div>
 
                 <div class="childBox">
                     <h3>Cuisine</h3>
-                    <div class="BoxContent">
-                        <span id='cuisine'></span>
-                    </div>
+                    <span id='cuisine'></span>
                 </div>
 
                 <div class="childBox">
                     <h3>Garage</h3>
-                    <div class="BoxContent">
-                        <span id='garage'></span>
-                    </div>
+                    <span id='garage'></span>
                 </div>
 
                 <div class="childBox">
                     <h3>Couloir</h3>
-                    <div class="BoxContent">
-                        <span id='couloir'></span>
-                    </div>
+                    <span id='couloir'></span>
                 </div>
 
             </div>
@@ -122,6 +107,7 @@ if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
 
 </html>
 
+<!--
 <script>
 setInterval(getTemp, 200);
 setInterval(getTime, 1000);
@@ -294,3 +280,4 @@ setInterval(function() {
     }
 }, 50);
 </script>
+-->

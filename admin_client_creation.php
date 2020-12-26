@@ -17,7 +17,7 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/58cdc139df.js" crossorigin="anonymous"></script>
     <!--LogoPage-->
-    <link rel="icon" type="image/png" href="../img/logo.jpg" />
+    <link rel="icon" type="image/png" href="img/logo/logo2.png" />
 
     <link rel="stylesheet" href="css/style.css" />
     <title>Les Viets - Salle Creation</title>
@@ -44,9 +44,9 @@ if ($_SESSION['role_utilisateur'] != 1 || !$_SESSION['id_utilisateur']) {
 
         <main>
             <section class="signup">
-                <form method="post" action="sinscrire_controller.php">
+                <form method="post" action="admin_client_creation_controller.php">
                     <div class="container">
-                        <h1>S'INSCRIRE</h1>
+                        <h2>CREATION DE CLIENT</h2>
                         <p>Veuillez remplir ce formulaire pour créer un compte.</p>
 
                         <div class="input-box">

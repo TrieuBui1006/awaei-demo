@@ -2,7 +2,7 @@
     <ul class="navbar-nav-compte">
 
         <li class="nav-item-compte">
-            <a href="#" class="nav-link-compte">
+            <a href="monCompte.php" class="nav-link-compte">
                 <i class="fas fa-splotch"></i>
                 <span class="item-text-compte">Mon Compte</span>
             </a>
@@ -63,7 +63,7 @@
         </li>
 
         <li class="nav-item-compte" id="themeButton">
-            <a href="#" class="nav-link-compte" style="background: #B00020;">
+            <a href="deconnection.php" class="nav-link-compte" style="background: #B00020;">
                 <i class="fas fa-power-off"></i>
                 <span class="item-text-compte">Déconnection</span>
             </a>
