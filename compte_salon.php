@@ -45,7 +45,24 @@ if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
         ?>
 
         <main>
-
+            <section class="description-salle">
+                <h1 style="margin: 20px 0">Mon Salon</h1>
+                <div class="content-main-salle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolore, officiis vel quam ut earum asperiores numquam eligendi enim praesentium?
+                </div>
+                <div class="content-salle">
+                    <img src="./img/salon.jpg" alt="salle">
+                    <div class="box-salle">
+                        <div class="degree">
+                            30C
+                        </div>
+                        <div class="text-supp">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nobis?
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptatum porro sunt voluptate autem saepe, blanditiis distinctio quod numquam, dicta eum cupiditate. Dolor veritatis porro distinctio fuga praesentium quae maiores.
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </section>
 

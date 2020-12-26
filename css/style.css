@@ -903,8 +903,9 @@ footer .sec.contact .info li a:hover{
 
 @media only screen and (max-width: 500px) {
   .nav-link-compte i.arrow-chambre {
-    top: 133px;
-    left: 55px;
+    top: 135px;
+    left: 42px;
+    font-size: 1.2rem;
   }
 
   .navbar-compte {
@@ -924,6 +925,7 @@ footer .sec.contact .info li a:hover{
 
   .submenu > li > a {
     margin-left: 0rem;
+    font-size: 0.9rem;
   }
 
   .submenu > li > a > i {
@@ -2307,7 +2309,7 @@ main {
   top: 70px;
   right: 0;
 
-  width: calc(100vw - 297px);
+  width: calc(100vw - 290px);
   padding: 15px;
 
   transition: width 0.1s ease;
@@ -2315,11 +2317,17 @@ main {
 
 @media only screen and (max-width: 900px) {
   main {
-    width: calc(100vw - 130px);
+    width: calc(100vw - 120px);
   }
 
   .mon-compte #check-compte:checked ~ main {
     margin-left: 200px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    width: calc(100vw - 130px);
   }
 }
 
@@ -2559,7 +2567,7 @@ input:checked + .slider:before {
 
 
 /*--------------------------------*/
-/*Mon Compte*/
+/*MON COMPTE*/
 /*--------------------------------*/
 
 section .mon-compte {
@@ -2614,4 +2622,95 @@ section.mon-compte main div.wrapper{
 }
 
 
+/*--------------------------------*/
+/*SALLES-SALON-CHAMBRE-CUISINE-SDB-GARAGE-COULOIR*/
+/*--------------------------------*/
+section.description-salle{
+  width: 100%;
+  padding: 0 20px;
+}
 
+.content-main-salle{
+  width: 90%;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.content-salle{
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.content-salle img{
+  width: 370px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.content-salle .box-salle{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.box-salle .degree{
+  width: 200px;
+  height: 200px;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-salle .text-supp{
+  width: 90%;
+  font-size: 1rem;
+  color: rgb(59, 59, 59);
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content-salle img{
+    width: 300px;
+  }
+
+  .box-salle .degree{
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .content-salle{
+    width: 100%;
+    flex-direction: column;
+  }
+  .content-salle .box-salle{
+    padding: 0;
+  }
+  .box-salle .text-supp{
+    width: 100%;
+  }
+  section.description-salle{
+    padding: 0;
+  }
+  .content-salle img{
+    width: 270px;
+  }
+  .box-salle .degree{
+    width: 200px;
+    height: 100px;
+  }
+}
