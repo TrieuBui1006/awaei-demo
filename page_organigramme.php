@@ -39,18 +39,49 @@ if (!isset($_SESSION['id_utilisateur'])) {
         <div class="content-present">
             <div class="box-present">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus animi fuga odit deleniti ex.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos debitis aliquam quidem libero mollitia nemo?
+                    Réalisation d’un banc expérimental de mesure de température et de contrôle de l’électricité par
+                    protocole Modbus
                 </p>
                 <br>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eaque dolore cumque assumenda, qui nulla.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quis asperiores nulla commodi, esse aspernatur.
+                    Pour réaliser cette mission une partie du matériel a été fournie par l’école. Celui-ci se composait
+                    de :
                 </p>
+                <ul>
+                    <li>Un automate AT3100 de marque AIM possédant les ports suivants : port Ethernet, port RS485 et le
+                        port d’alimentation;</li>
+                    <li>Une carte de communication AIM C0800, cette carte comporte un port Ethernet ainsi qu’un port
+                        spécifique à la communication des modules AIM. Ce port a pour but la communication des
+                        différentes informations sur les modules complémentaires;</li>
+                    <li>Un module AIM 6PT24 avec un port de communication spécifique AIM, permettant la connexion de
+                        sonde de température de type PT100 3 fils;</li>
+                    <li>Un switch D-Link 16 ports, permettant de relier les différents composants (ordinateur, automates
+                        programmables et les différents modules) entre eux.</li>
+                </ul>
+                <br>
+                <p>Des logiciels m’ont aussi été fournis avec l’automate</p>
+                <ul>
+                    <li>Le logiciel de programmation graphique propriétaire de l’automate : Agilia;</li>
+                    <li>Le logiciel Network Manager permettant la configuration des différents éléments (Automate et
+                        convertisseur de la marque AIM);</li>
+                    <li>Le logiciel de simulateur de serveur, WAMP server ;</li>
+                    <li>Le logiciel de développement du langage HTML et PHP : VS Code.</li>
+                </ul>
                 <br>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga assumenda sunt modi beatae quae iure?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aspernatur nihil tenetur. Sapiente, dignissimos earum.
+                    Dans un premier temps l’information température devait être envoyée par protocole Ethernet et
+                    pilotée par protocole Modbus. Cette partie appelée «mode instantané» permet cette communication.
+                    Ainsi ce mode permet la visualisation de la température sur une page web pour une communication des
+                    sondes vers l’ordinateur et la visualisation sur la dalle tactile de l’automate pour une
+                    communication des sondes vers l’automate. Dans un second temps, et dans une optique d’amélioration,
+                    l’information température devait être stockée dans la mémoire de l’automate puis envoyée à une base
+                    de données. Cette partie appelée «mode automatique» est bien entamée mais malheureusement non
+                    opérationnelle. La partie programmation de l’automate est finie, cependant, la partie PHP est quant
+                    à elle inachevée. 5 La sélection entre les deux modes sur la page web se fait via un menu à deux
+                    choix. Étant donné que seul le mode instantané fonctionne, les deux choix amènent exclusivement vers
+                    celui-ci. En ce qui concerne l’automate, un menu est aussi disponible sur la page d’accueil. Le
+                    choix du mode automatique emmène l’utilisateur sur la «page automatique» mais celle-ci reste
+                    statique.
                 </p>
             </div>
             <div class="box-present">
@@ -69,15 +100,12 @@ if (!isset($_SESSION['id_utilisateur'])) {
             </div>
             <div class="box-present">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus animi fuga odit deleniti ex.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos debitis aliquam quidem libero mollitia nemo?
+                    Maxime BAVENCOFFE
                 </p>
-                <br>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eaque dolore cumque assumenda, qui nulla.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quis asperiores nulla commodi, esse aspernatur.
+                    Maître de Conférences
                 </p>
-                <br>
+                <p>INSA Centre Val de Loire - Campus de Blois</p>
             </div>
         </div>
     </section>
@@ -86,8 +114,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <section class="equipe-organization">
         <h1>Notre Équipe</h1>
         <div class="content-equipe-organization">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus animi fuga odit deleniti ex.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos debitis aliquam quidem libero mollitia nemo?
+            Un groupe de 4 étudiants vietnamiens de dernière année option ACAD de l'INSA Centre Val de Loire
         </div>
         <div class="members-equipe-organization">
             <div class="content-member">
@@ -95,24 +122,24 @@ if (!isset($_SESSION['id_utilisateur'])) {
                 <span>Directeur</span>
                 <div class="img-member">
                     <img src="./img/intro/intro1.jpg" alt="TrieuBui">
-                </div>  
+                </div>
             </div>
             <div class="content-member">
-                <p>BUI Duc Trieu</p>
+                <p>NGUYEN Huynh Dung</p>
                 <span>Directeur</span>
                 <div class="img-member">
                     <img src="./img/intro/intro1.jpg" alt="TrieuBui">
                 </div>
             </div>
             <div class="content-member">
-                <p>BUI Duc Trieu</p>
+                <p>LE Quang Quoc Bao</p>
                 <span>Directeur</span>
                 <div class="img-member">
                     <img src="./img/intro/intro1.jpg" alt="TrieuBui">
                 </div>
             </div>
             <div class="content-member">
-                <p>BUI Duc Trieu</p>
+                <p>LE Quang Linh</p>
                 <span>Directeur</span>
                 <div class="img-member">
                     <img src="./img/intro/intro1.jpg" alt="TrieuBui">

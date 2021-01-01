@@ -29,7 +29,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
 
     <!--- banner--->
     <section class="banner">
-        <video src='./video/SmartHome.mp4' autoPlay loop muted ></video>
+        <video src='./video/SmartHome.mp4' autoPlay loop muted></video>
         <div class="content">
             <div class="intro">
                 <h2>Bienvenue <br />Nous sommes <span>VIETSAF</span></h2>
@@ -71,7 +71,8 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <section class="introduction">
         <h1 class="header-intro">Overview</h1>
         <div class="body-intro">
-            Welcome to SmartThings. Choose the right temperature. The right mood. Even the right wash cycle. All from right here.
+            Bienvenue sur SmartThings. Choisissez la bonne température. La bonne humeur. Même le bon cycle de lavage.
+            Tout à partir d'ici.
         </div>
         <a href="page_infomation.php" class="button-intro">Contact</a>
     </section>
@@ -83,18 +84,20 @@ if (!isset($_SESSION['id_utilisateur'])) {
         <div class="content-present">
             <div class="box-present">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus animi fuga odit deleniti ex.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos debitis aliquam quidem libero mollitia nemo?
+                    L'entreprise a été fondée par un groupe de quatre amis qui ont étudié à l'INSA Centre Val de Loire.
+                    Dans le but d'apporter le plus de confort à chaque maison grâce à l'application des technologies
+                    4.0.
                 </p>
                 <br>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eaque dolore cumque assumenda, qui nulla.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quis asperiores nulla commodi, esse aspernatur.
+                    Avec de nombreuses années d'expérience dans le conseil en logement ainsi que dans le développement
+                    de l'IOT et de systèmes Web. Nous nous engageons à offrir une expérience intelligente et confortable
+                    à nos clients.
                 </p>
                 <br>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga assumenda sunt modi beatae quae iure?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aspernatur nihil tenetur. Sapiente, dignissimos earum.
+                    Nous fournissons des services de contrôle de la maison intelligente ainsi que le courtage de maisons
+                    intelligentes et l'installation de systèmes.
                 </p>
             </div>
             <div class="box-present">
@@ -113,7 +116,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
                     <img src="./img/intro/wifi.png" alt="box-service-img">
                 </div>
                 <div class="box-service-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis distinctio maiores ut necessitatibus illo eos.
+                    Courtier immobilier
                 </div>
             </div>
             <div class="box-service">
@@ -121,7 +124,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
                     <img src="./img/intro/wifi.png" alt="box-service-img">
                 </div>
                 <div class="box-service-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis distinctio maiores ut necessitatibus illo eos.
+                    Installer le système
                 </div>
             </div>
             <div class="box-service">
@@ -129,7 +132,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
                     <img src="./img/intro/wifi.png" alt="box-service-img">
                 </div>
                 <div class="box-service-content">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis distinctio maiores ut necessitatibus illo eos.
+                    Fournir des services logiciels
                 </div>
             </div>
         </div>
@@ -143,7 +146,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
             <p>Revevez une fois par mois (maximum) l'actualité de Vietsaf</p>
         </div>
         <div class="box-news">
-            <input type="email" name="email" required="required" >
+            <input type="email" name="email" required="required">
             <button>GO !</button>
         </div>
     </section>
@@ -162,24 +165,26 @@ if (!isset($_SESSION['id_utilisateur'])) {
                 <div id="overflow">
                     <div class="inner">
                         <div class="slide slide_1">
-                        <div class="slide-content">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ladipisci porro facilis eaque, corporis, natus culpa animi, nihil aliquid cupiditate inventore amet? Perspiciatis.</p>
-                        </div>
+                            <div class="slide-content">
+                                <p>The Nest Hello has the best video quality and HDR support. En outre,
+                                    cela s'intègre à Google Ecosystème. Il enregistre tout, 24/7. Vous pouvez le
+                                    connecter à l'application que vous pouvez contrôler avec votre téléphone.
+                                    Nest Hello traite la sonnette comme un système de sécurité normal.</p>
+                            </div>
                         </div>
                         <div class="slide slide_2">
-                        <div class="slide-content">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos itaque corrupti ipsam? Fugit, dolorem.</p>
-                        </div>
+                            <div class="slide-content">
+                                <p>Networking Hub est centralisé. Avec Philips Hue Hub et smartthings hub.
+                                    Home Run héberge également le routeur Wi-Fi. Le réseau maillé est amplifié HD.</p>
+                            </div>
                         </div>
                         <div class="slide slide_3">
-                        <div class="slide-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, doloribus saepe facere fugiat beatae non reprehenderit?</p>
-                        </div>
-                        </div>
-                        <div class="slide slide_4">
-                        <div class="slide-content">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga vero eligendi aliquid quis iste?</p>
-                        </div>
+                            <div class="slide-content">
+                                <p>Caméra de sécurité a un agent en direct de l'autre côté qui vérifie chaque
+                                    mouvement. De plus, s'il y a une menace quelconque, ils réagissent en adressant un
+                                    avertissement
+                                    à l'intrus et ils appelleront également la police.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

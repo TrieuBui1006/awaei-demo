@@ -16,7 +16,7 @@
             <div><span class="header-text">Menu</span></div>
             <ul>
                 <li>
-                    <a href="page_homepage.php"><span class="link-text">Accueil</span></a>
+                    <a href="index.php"><span class="link-text">Accueil</span></a>
                 </li>
                 <li>
                     <a href="page_organigramme.php"><span class="link-text">Organigramme</span></a>
@@ -57,7 +57,7 @@
 
     <div id="navigation">
         <ul>
-            <li><a href="page_homepage.php" class="nav-link">Accueil</a></li>
+            <li><a href="index.php" class="nav-link">Accueil</a></li>
             <li><a href="page_organigramme.php" class="nav-link">Organigramme</a></li>
             <li><a href="page_infomation.php" class="nav-link">Infomation</a></li>
 
