@@ -40,33 +40,33 @@ if (!isset($_SESSION['id_utilisateur'])) {
             <div class="box-present">
                 <p>
                     Réalisation d’un banc expérimental de mesure de température et de contrôle de l’électricité par
-                    protocole Modbus
+                    protocole Modbus.
                 </p>
                 <br>
                 <p>
                     Pour réaliser cette mission une partie du matériel a été fournie par l’école. Celui-ci se composait
                     de :
                 </p>
-                <ul>
-                    <li>Un automate AT3100 de marque AIM possédant les ports suivants : port Ethernet, port RS485 et le
-                        port d’alimentation;</li>
-                    <li>Une carte de communication AIM C0800, cette carte comporte un port Ethernet ainsi qu’un port
-                        spécifique à la communication des modules AIM. Ce port a pour but la communication des
-                        différentes informations sur les modules complémentaires;</li>
-                    <li>Un module AIM 6PT24 avec un port de communication spécifique AIM, permettant la connexion de
-                        sonde de température de type PT100 3 fils;</li>
-                    <li>Un switch D-Link 16 ports, permettant de relier les différents composants (ordinateur, automates
-                        programmables et les différents modules) entre eux.</li>
-                </ul>
+
+                <p>➼ Un automate AT3100 de marque AIM possédant les ports suivants : port Ethernet, port RS485 et le
+                    port d’alimentation.</p>
+                <p>➼ Une carte de communication AIM C0800, cette carte comporte un port Ethernet ainsi qu’un port
+                    spécifique à la communication des modules AIM. Ce port a pour but la communication des
+                    différentes informations sur les modules complémentaires.</p>
+                <p>➼ Un module AIM 6PT24 avec un port de communication spécifique AIM, permettant la connexion de
+                    sonde de température de type PT100 3 fils.</p>
+                <p>➼ Un switch D-Link 16 ports, permettant de relier les différents composants (ordinateur, automates
+                    programmables et les différents modules) entre eux.</p>
+
                 <br>
-                <p>Des logiciels m’ont aussi été fournis avec l’automate</p>
-                <ul>
-                    <li>Le logiciel de programmation graphique propriétaire de l’automate : Agilia;</li>
-                    <li>Le logiciel Network Manager permettant la configuration des différents éléments (Automate et
-                        convertisseur de la marque AIM);</li>
-                    <li>Le logiciel de simulateur de serveur, WAMP server ;</li>
-                    <li>Le logiciel de développement du langage HTML et PHP : VS Code.</li>
-                </ul>
+                <p>Des logiciels m’ont aussi été fournis avec l’automate:</p>
+
+                <p>➼ Le logiciel de programmation graphique propriétaire de l’automate : Agilia.</p>
+                <p>➼ Le logiciel Network Manager permettant la configuration des différents éléments (Automate et
+                    convertisseur de la marque AIM).</p>
+                <p>➼ Le logiciel de simulateur de serveur, WAMP server .</p>
+                <p>➼ Le logiciel de développement du langage HTML et PHP : VS Code.</p>
+
                 <br>
                 <p>
                     Dans un premier temps l’information température devait être envoyée par protocole Ethernet et
@@ -84,9 +84,6 @@ if (!isset($_SESSION['id_utilisateur'])) {
                     statique.
                 </p>
             </div>
-            <div class="box-present">
-                <img src="./img/intro/wifi.png" alt="present-img">
-            </div>
         </div>
     </section>
 
@@ -96,7 +93,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
         <h1>Notre Tuteur</h1>
         <div class="content-present">
             <div class="box-present">
-                <img src="./img/intro/wifi.png" alt="present-img">
+                <img src="./img/pageOrga/bavencoffe.jpg" alt="present-img">
             </div>
             <div class="box-present">
                 <p>
@@ -121,28 +118,28 @@ if (!isset($_SESSION['id_utilisateur'])) {
                 <p>BUI Duc Trieu</p>
                 <span>Directeur</span>
                 <div class="img-member">
-                    <img src="./img/intro/intro1.jpg" alt="TrieuBui">
+                    <img src="./img/pageOrga/BDT.jpg" alt="TrieuBui">
                 </div>
             </div>
             <div class="content-member">
                 <p>NGUYEN Huynh Dung</p>
-                <span>Directeur</span>
+                <span>CTO Vietsaf</span>
                 <div class="img-member">
-                    <img src="./img/intro/intro1.jpg" alt="TrieuBui">
+                    <img src="./img/pageOrga/NHD.png" alt="TrieuBui">
                 </div>
             </div>
             <div class="content-member">
                 <p>LE Quang Quoc Bao</p>
-                <span>Directeur</span>
+                <span>CTO Vietsaf</span>
                 <div class="img-member">
-                    <img src="./img/intro/intro1.jpg" alt="TrieuBui">
+                    <img src="./img/pageOrga/LQQB.jpg" alt="TrieuBui">
                 </div>
             </div>
             <div class="content-member">
                 <p>LE Quang Linh</p>
-                <span>Directeur</span>
+                <span>CTO Vietsaf</span>
                 <div class="img-member">
-                    <img src="./img/intro/intro1.jpg" alt="TrieuBui">
+                    <img src="./img/pageOrga/LQL.jpg" alt="TrieuBui">
                 </div>
             </div>
         </div>

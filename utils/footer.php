@@ -18,6 +18,9 @@
             <h2>Support</h2>
             <ul>
                 <li><a href="#">LE Quang Linh</a></li>
+                <li><a href="#">BUI Duc Trieu</a></li>
+                <li><a href="#">NGUYEN Huynh Dung</a></li>
+                <li><a href="#">LE Quang Quoc Bao</a></li>
             </ul>
         </div>
 
@@ -44,7 +47,7 @@
                 <li>
                     <span><i class="fa fa-phone" aria-hidden="true"></i></span>
                     <p><a href="tel:12345678900">+33 7 76 08 56 39</a><br>
-                        <a href="tel:12345678900">+33 7 76 08 56 39</a>
+                        <a href="tel:12345678900">+33 7 34 23 11 22</a>
                     </p>
                 </li>
                 <li>
@@ -56,5 +59,5 @@
     </div>
 </footer>
 <div class="copyrightText">
-    <p>Copyright @ 2020 Online Tutorials. All Rights Reserved.</p>
+    <p>Copyright @ 2021. All Rights Reserved.</p>
 </div>

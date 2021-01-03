@@ -48,11 +48,10 @@ if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
             <section class="description-salle">
                 <h1 style="margin: 20px 0">Mon Cuisine</h1>
                 <div class="content-main-salle">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolore, officiis vel quam ut
-                    earum asperiores numquam eligendi enim praesentium?
+                Bienvenue dans votre cuisine ! 
                 </div>
                 <div class="content-salle">
-                    <img src="./img/salon.jpg" alt="salle">
+                    <img src="./img/room/cuisine.jpg" alt="salle">
                     <div class="box-salle">
                         <p>Temp de la cuisine:</p>
                         <div class="degree" id="degree">

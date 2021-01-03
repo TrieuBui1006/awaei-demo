@@ -16,7 +16,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <link rel="icon" type="image/png" href="img/logo/logo2.png" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <title>Les Viets - Info</title>
+    <title>Les Viets - Infomation</title>
 </head>
 
 <body id="mainpage">

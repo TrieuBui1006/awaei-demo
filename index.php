@@ -71,7 +71,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <section class="introduction">
         <h1 class="header-intro">Overview</h1>
         <div class="body-intro">
-            Bienvenue sur SmartThings. Choisissez la bonne température. La bonne humeur. Même le bon cycle de lavage.
+            Bienvenue sur Vietsaf. Choisissez la bonne température. La bonne humeur. Même le bon cycle de lavage.
             Tout à partir d'ici.
         </div>
         <a href="page_infomation.php" class="button-intro">Contact</a>
@@ -101,7 +101,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
                 </p>
             </div>
             <div class="box-present">
-                <img src="./img/intro/wifi.png" alt="present-img">
+                <img src="./img/mainpage/quiSommesNous.jpg" alt="present-img">
             </div>
         </div>
     </section>
@@ -113,7 +113,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
         <div class="content-service">
             <div class="box-service">
                 <div class="box-service-img">
-                    <img src="./img/intro/wifi.png" alt="box-service-img">
+                    <img src="./img/mainpage/service1.png" alt="box-service-img">
                 </div>
                 <div class="box-service-content">
                     Courtier immobilier
@@ -121,7 +121,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
             </div>
             <div class="box-service">
                 <div class="box-service-img">
-                    <img src="./img/intro/wifi.png" alt="box-service-img">
+                    <img src="./img/mainpage/service2.png" alt="box-service-img">
                 </div>
                 <div class="box-service-content">
                     Installer le système
@@ -129,7 +129,7 @@ if (!isset($_SESSION['id_utilisateur'])) {
             </div>
             <div class="box-service">
                 <div class="box-service-img">
-                    <img src="./img/intro/wifi.png" alt="box-service-img">
+                    <img src="./img/mainpage/service3.png" alt="box-service-img">
                 </div>
                 <div class="box-service-content">
                     Fournir des services logiciels
@@ -186,6 +186,11 @@ if (!isset($_SESSION['id_utilisateur'])) {
                                     à l'intrus et ils appelleront également la police.</p>
                             </div>
                         </div>
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <p>I love you Mr.Bavencoffe.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,14 +214,14 @@ if (!isset($_SESSION['id_utilisateur'])) {
     <section class="collaborateur">
         <h1>Collaborateurs</h1>
         <div class="content-colla">
-            <img src="./img/intro/wifi.png" alt="collaboration">
-            <img src="./img/intro/wifi.png" alt="collaboration">
-            <img src="./img/intro/wifi.png" alt="collaboration">
-            <img src="./img/intro/wifi.png" alt="collaboration">
-            <img src="./img/intro/wifi.png" alt="collaboration">
-            <img src="./img/intro/wifi.png" alt="collaboration">
-            <img src="./img/intro/wifi.png" alt="collaboration">
-            <img src="./img/intro/wifi.png" alt="collaboration">
+            <img src="./img/mainpage/label1.png" alt="collaboration">
+            <img src="./img/mainpage/label2.png" alt="collaboration">
+            <img src="./img/mainpage/label3.png" alt="collaboration">
+            <img src="./img/mainpage/label4.png" alt="collaboration">
+            <img src="./img/mainpage/label5.png" alt="collaboration">
+            <img src="./img/mainpage/label6.png" alt="collaboration">
+            <img src="./img/mainpage/label7.png" alt="collaboration">
+            <img src="./img/mainpage/label8.png" alt="collaboration">
         </div>
     </section>
     <!--- collaborateur --->

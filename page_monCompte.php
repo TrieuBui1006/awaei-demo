@@ -23,7 +23,7 @@ if ($_SESSION['role_utilisateur'] != 0 || !$_SESSION['id_utilisateur']) {
 
     <script src="./node_modules/plotly.js-dist/plotly.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Les Viets - Info</title>
+    <title>Les Viets - Compte</title>
 </head>
 
 <body id="mainpage">

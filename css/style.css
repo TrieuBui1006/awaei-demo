@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap');@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
 
 :root {
   --mainColor: rgb(255, 255, 255);
@@ -35,7 +36,7 @@ h1 {
   text-align: center;
   font-size: 3rem;
   margin: 50px 0;
-  font-family: Century Gothic;
+  font-family: 'Noto Serif', serif;
 }
 
 h1::before {
@@ -1152,8 +1153,6 @@ section.introduction {
   line-height: 3rem;
   padding-bottom: 20px;
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0 auto;
 }
 
@@ -1200,8 +1199,8 @@ section.present {
 }
 
 .box-present {
-  padding: 0 10px;
-  max-width: 700px;
+  padding: 0 10px 10px 10px;
+  max-width: 900px;
 }
 
 .box-present p {
@@ -1289,7 +1288,7 @@ section.service {
 
 .box-service-content {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -1454,7 +1453,7 @@ section.review .review-comment {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  height: 100%;
   color: #000;
 }
 #slides .slide .slide-content {
@@ -1485,7 +1484,7 @@ section.review .review-comment {
 }*/
 
 #controls {
-  margin: -130px 0 0 0;
+  margin: -110px 0 0 0;
   width: 100%;
   z-index: 3;
   position: relative;
@@ -1569,7 +1568,7 @@ section.review .review-comment {
     max-width: calc(100% - 30px);
   }
   #bullets {
-    margin: 100px 0 0;
+    margin: 115px 0 0;
   }
 }
 
@@ -1585,7 +1584,7 @@ section.collaborateur {
 .content-colla {
   padding: 100px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   justify-content: center;
@@ -1718,6 +1717,7 @@ section.equipe-organization {
 }
 .content-member .img-member img {
   width: 280px;
+  height: 280px;
   opacity: 0.85;
   transition: all 0.5s;
 }
@@ -2336,6 +2336,16 @@ main {
   transition: width 0.1s ease;
 }
 
+img.adminPhoto{
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 900px) {
   main {
     width: calc(100vw - 120px);
@@ -2466,7 +2476,7 @@ section.signup form .container .input-box {
   border: none;
   border: 1px solid rgb(20, 20, 20, 0.5);
   border-radius: 2px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 
   background: #f3f2f2;
 
@@ -2595,13 +2605,13 @@ section .mon-compte {
 
 section.mon-compte main div.wrapper {
   width: 100%;
-  height: 400px;
+  height: 450px;
 }
 
 .flexBoxTemp {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   align-items: center;
   grid-gap: 20px;
@@ -2609,8 +2619,8 @@ section.mon-compte main div.wrapper {
 
 .flexBoxTemp .childBox {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border: 2px solid #ccc;
   margin: 0 auto;
 
@@ -2653,7 +2663,7 @@ section.description-salle {
   font-size: 1.2rem;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .content-salle {
@@ -2668,7 +2678,7 @@ section.description-salle {
 
 .content-salle img {
   width: 370px;
-  margin: auto;
+  margin: 0;
   padding: 0 10px;
 }
 
@@ -2678,12 +2688,12 @@ section.description-salle {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: auto 40px;
 }
 
 .box-salle .degree {
   width: 200px;
-  height: 200px;
+  height: 150px;
   font-size: 5rem;
   letter-spacing: 2px;
   display: flex;
@@ -2692,7 +2702,7 @@ section.description-salle {
 }
 
 .box-salle .text-supp {
-  width: 90%;
+  width: 100%;
   font-size: 1rem;
   color: rgb(59, 59, 59);
   text-align: center;
@@ -2702,7 +2712,7 @@ section.description-salle {
 /*--------------------------------*/
 /*LED*/
 /*--------------------------------*/
-.led {
+.box-salle .text-supp .led {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2711,7 +2721,44 @@ section.description-salle {
   height: 30px;
   border-radius: 50%;
   border: solid 1px #ccc;
+  color: #000;
 }
+
+.box-salle .text-supp h3 {
+  font-size: 1.2rem;
+}
+
+.box-salle .text-supp button {
+  display: inline-block;
+  width: 80px;
+
+  padding: 7px 20px;
+  margin: 10px 10px 10px 0;
+  border: none;
+  border-radius: 0px;
+
+  color: #ffffff;
+
+  font-size: 1.1rem;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: all 0.3s ease-out;
+}
+
+button#btnOnRad, button#btnOnLum{
+  background: #2bc40d;
+}
+
+button#btnOffRad, button#btnOffLum{
+  background: #be0707;
+}
+
+.box-salle .text-supp button:hover {
+  border-radius: 20px;
+}
+
 
 @media only screen and (max-width: 1000px) {
   .content-salle img {
@@ -2725,6 +2772,14 @@ section.description-salle {
 }
 
 @media only screen and (max-width: 700px) {
+  .content-salle img {
+    margin: auto;
+  }
+  
+  .content-salle .box-salle {
+    margin: 0 auto;
+  }
+
   .content-salle {
     width: 100%;
     flex-direction: column;
