@@ -2748,11 +2748,11 @@ section.description-salle {
   transition: all 0.3s ease-out;
 }
 
-button#btnOnRad, button#btnOnLum{
+button#btnOnRad, button#btnOnLum, button#btnOnEau{
   background: #2bc40d;
 }
 
-button#btnOffRad, button#btnOffLum{
+button#btnOffRad, button#btnOffLum, button#btnOffEau{
   background: #be0707;
 }
 

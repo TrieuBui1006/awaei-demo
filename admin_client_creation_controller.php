@@ -56,7 +56,7 @@ else {
 		session_start();
 		$_SESSION['id_utilisateur'] = $resultat['id_utilisateur'];
 		$_SESSION['role_utilisateur'] = $resultat['role_utilisateur'];
-		header('Location: page_homepage.php');
+		header('Location: index.php');
 	}
 	// Les deux mot de passe sont différents
 	else {
